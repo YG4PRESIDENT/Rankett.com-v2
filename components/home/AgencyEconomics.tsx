@@ -43,7 +43,21 @@ export default function AgencyEconomics() {
           {/* Right — markup examples */}
           <FadeIn direction="up" delay={0.12}>
             <div className="lg:pt-10 space-y-4">
-              <div className="p-6 rounded-2xl border border-[#E5E5E3] bg-white">
+              <div
+                className="p-6 rounded-2xl border border-[#E5E5E3] relative overflow-hidden"
+                style={{
+                  background:
+                    'radial-gradient(ellipse at 20% 50%, rgba(167, 191, 255, 0.45) 0%, transparent 60%), radial-gradient(ellipse at 80% 20%, rgba(196, 219, 255, 0.35) 0%, transparent 55%), radial-gradient(ellipse at 60% 80%, rgba(221, 230, 255, 0.4) 0%, transparent 50%), #F0F4FF',
+                }}
+              >
+                {/* Dot matrix texture */}
+                <div
+                  className="absolute inset-0 opacity-30"
+                  style={{
+                    backgroundImage: 'radial-gradient(circle, #6B8EFF 1px, transparent 1px)',
+                    backgroundSize: '28px 28px',
+                  }}
+                />
                 <p className="text-xs font-semibold uppercase tracking-wider text-[#9B9B9B] mb-5">Example agency markup</p>
                 <div className="space-y-1">
                   <div className="grid grid-cols-4 gap-2 pb-2 border-b border-[#E5E5E3]">

@@ -17,8 +17,22 @@ const AI_PLATFORMS = [
 
 export default function HeroV2() {
   return (
-    <section className="pt-32 pb-20 md:pt-40 md:pb-28">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      className="pt-32 pb-20 md:pt-40 md:pb-28 relative overflow-hidden"
+      style={{
+        background:
+          'radial-gradient(ellipse at 20% 50%, rgba(167, 191, 255, 0.45) 0%, transparent 60%), radial-gradient(ellipse at 80% 20%, rgba(196, 219, 255, 0.35) 0%, transparent 55%), radial-gradient(ellipse at 60% 80%, rgba(221, 230, 255, 0.4) 0%, transparent 50%), #F0F4FF',
+      }}
+    >
+      {/* Dot matrix texture */}
+      <div
+        className="absolute inset-0 opacity-30"
+        style={{
+          backgroundImage: 'radial-gradient(circle, #6B8EFF 1px, transparent 1px)',
+          backgroundSize: '28px 28px',
+        }}
+      />
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-3xl">
           {/* Eyebrow */}
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#E5E5E3] bg-white text-xs font-medium text-[#6B6B6B] mb-6">

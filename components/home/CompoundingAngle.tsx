@@ -46,7 +46,22 @@ export default function CompoundingAngle() {
               The section is sized and padded to receive a full-bleed SVG or image.
               Recommended dimensions: ~560 × 380px.
             */}
-            <div className="relative rounded-2xl border border-[#E5E5E3] bg-[#FAFAF9] overflow-hidden" style={{ minHeight: 340 }}>
+            <div
+              className="relative rounded-2xl border border-[#E5E5E3] overflow-hidden"
+              style={{
+                minHeight: 340,
+                background:
+                  'radial-gradient(ellipse at 20% 50%, rgba(167, 191, 255, 0.45) 0%, transparent 60%), radial-gradient(ellipse at 80% 20%, rgba(196, 219, 255, 0.35) 0%, transparent 55%), radial-gradient(ellipse at 60% 80%, rgba(221, 230, 255, 0.4) 0%, transparent 50%), #F0F4FF',
+              }}
+            >
+              {/* Dot matrix texture */}
+              <div
+                className="absolute inset-0 opacity-30"
+                style={{
+                  backgroundImage: 'radial-gradient(circle, #6B8EFF 1px, transparent 1px)',
+                  backgroundSize: '28px 28px',
+                }}
+              />
               {/* Placeholder bar chart */}
               <div className="absolute inset-0 flex items-end gap-2 p-8 pb-14">
                 {[
