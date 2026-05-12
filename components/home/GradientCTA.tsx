@@ -1,5 +1,4 @@
-import { ArrowRight } from 'lucide-react'
-import Link from 'next/link'
+import { ArrowRight, Phone } from 'lucide-react'
 import FadeIn from '@/components/scroll/FadeIn'
 
 const CALENDLY = 'https://calendly.com/rankett/30min'
@@ -39,15 +38,16 @@ export default function GradientCTA() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#2a3eb1] text-white text-sm font-semibold hover:bg-[#1e2f8a] transition-colors shadow-sm"
                 >
-                  Book a Call
+                  Book a Demo
                   <ArrowRight className="w-4 h-4" />
                 </a>
-                <Link
-                  href="https://app.rankett.com/sign-in"
-                  className="inline-flex items-center gap-1.5 px-6 py-3.5 rounded-full border border-[#2a3eb1]/30 text-[#2a3eb1] text-sm font-semibold hover:bg-white/60 transition-colors"
+                <a
+                  href="tel:+18578473152"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-[#2a3eb1]/30 text-[#2a3eb1] text-sm font-semibold hover:bg-white/60 transition-colors"
                 >
-                  Partner Login →
-                </Link>
+                  <Phone className="w-3.5 h-3.5" />
+                  Call Us
+                </a>
               </div>
             </div>
           </div>

@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Menu, X, ArrowRight, ChevronDown, BarChart2, FileText, Search, Pen, Globe, CheckCircle } from 'lucide-react'
+import { Menu, X, ArrowRight, ChevronDown, BarChart2, FileText, Search, Pen, Globe, CheckCircle, Phone } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 
 const CALENDLY = 'https://calendly.com/rankett/30min'
@@ -136,7 +136,7 @@ export default function Header() {
                       View all features →
                     </Link>
                     <a href={CALENDLY} target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-[#4F7CFF] hover:text-[#3D6AEE] transition-colors">
-                      Book a Call →
+                      Book a Demo →
                     </a>
                   </div>
                 </div>
@@ -152,16 +152,17 @@ export default function Header() {
           </nav>
 
           {/* Desktop CTAs */}
-          <div className="hidden md:flex items-center gap-3">
-            <Link
-              href="https://app.rankett.com/sign-in"
-              className="text-sm text-[#6B6B6B] hover:text-[#111110] transition-colors duration-150"
+          <div className="hidden md:flex items-center gap-4">
+            <a
+              href="tel:+18578473152"
+              className="flex items-center gap-1.5 text-sm text-[#6B6B6B] hover:text-[#111110] transition-colors duration-150"
             >
-              Partner Login
-            </Link>
+              <Phone className="w-3.5 h-3.5" />
+              +1 857-847-3152
+            </a>
             <a href={CALENDLY} target="_blank" rel="noopener noreferrer">
               <Button size="sm" variant="primary">
-                Book a Call
+                Book a Demo
                 <ArrowRight className="w-3.5 h-3.5" />
               </Button>
             </a>
@@ -217,11 +218,15 @@ export default function Header() {
           </nav>
           <div className="flex flex-col gap-2">
             <a href={CALENDLY} target="_blank" rel="noopener noreferrer">
-              <Button size="md" variant="primary" className="w-full">Book a Call</Button>
+              <Button size="md" variant="primary" className="w-full">Book a Demo</Button>
             </a>
-            <Link href="https://app.rankett.com/sign-in">
-              <Button size="md" variant="outline" className="w-full">Partner Login</Button>
-            </Link>
+            <a
+              href="tel:+18578473152"
+              className="flex items-center justify-center gap-2 py-3 text-sm font-semibold text-[#111110] border border-[#E5E5E3] rounded-xl hover:bg-[#FAFAF9] transition-colors"
+            >
+              <Phone className="w-4 h-4" />
+              Call Us · +1 857-847-3152
+            </a>
           </div>
         </div>
       )}
