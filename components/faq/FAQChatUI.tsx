@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Plus, Minus } from 'lucide-react'
+import { motion, AnimatePresence } from 'framer-motion'
 
 const CALENDLY = 'https://calendly.com/rankett/30min'
 
@@ -79,10 +79,10 @@ const FAQ_CATEGORIES = [
     faqs: [
       {
         question: 'How long does setup take?',
-        answer: 'White-label branding setup — logo, colors, and domain — takes about 5 minutes. The WordPress plugin installs on your client\'s site in one click. We include an onboarding call where Rankett configures everything. Your first deliverables are live within 30 days of signing.',
+        answer: "White-label branding setup — logo, colors, and domain — takes about 5 minutes. The WordPress plugin installs on your client's site in one click. We include an onboarding call where Rankett configures everything. Your first deliverables are live within 30 days of signing.",
       },
       {
-        question: "Does Rankett work for non-WordPress sites?",
+        question: 'Does Rankett work for non-WordPress sites?',
         answer: "Currently, Rankett's automated deployment runs via a WordPress plugin, so the primary path is for WordPress-based client sites. If you have enterprise or custom-CMS clients, reach out directly — we handle non-standard setups on a case-by-case basis.",
       },
     ],
@@ -91,7 +91,7 @@ const FAQ_CATEGORIES = [
     category: 'Fit for Your Agency',
     faqs: [
       {
-        question: "My agency already does SEO. Will Rankett conflict with what we do?",
+        question: 'My agency already does SEO. Will Rankett conflict with what we do?',
         answer: "No — Rankett is designed to layer under what your team already delivers. Your agency handles the core ranking work: technical audits, backlinks, on-page optimization. Rankett handles the implementation depth layer: continuous buyer-intent content, schema, page freshness, and internal authority reinforcement. It adds to your offering without replacing it.",
       },
       {
@@ -110,8 +110,7 @@ const FAQ_CATEGORIES = [
   },
 ]
 
-// Cascade offsets — vary how far each bubble sits from the right edge
-const BUBBLE_OFFSETS = [0, 40, 20, 56, 12, 32, 48, 8]
+const BUBBLE_OFFSETS = [0, 64, 24, 88, 16, 52, 72, 8]
 
 export default function FAQChatUI() {
   const [activeCategory, setActiveCategory] = useState<string | null>(null)
@@ -125,46 +124,52 @@ export default function FAQChatUI() {
   const toggle = (key: string) => setOpenKey(openKey === key ? null : key)
 
   return (
-    <div>
-      {/* Category filter chips */}
-      <div className="flex flex-wrap items-center justify-center gap-2 mb-14">
-        <button
-          onClick={() => setActiveCategory(null)}
-          className={`px-4 py-1.5 rounded-full text-xs font-medium transition-colors border ${
-            activeCategory === null
-              ? 'bg-[#4F7CFF] border-[#4F7CFF] text-white'
-              : 'border-[#E5E5E3] text-[#6B6B6B] hover:border-[#4F7CFF]/40 hover:text-[#111110]'
-          }`}
-        >
-          All
-        </button>
-        {categories.map((cat) => (
+    <div className="bg-[#0D0D0C] rounded-3xl overflow-hidden border border-white/[0.06] shadow-2xl shadow-black/20">
+
+      {/* Category filter bar */}
+      <div className="px-5 pt-5 pb-4 border-b border-white/[0.06]">
+        <div className="flex flex-wrap gap-1.5">
           <button
-            key={cat}
-            onClick={() => setActiveCategory(cat === activeCategory ? null : cat)}
-            className={`px-4 py-1.5 rounded-full text-xs font-medium transition-colors border ${
-              activeCategory === cat
-                ? 'bg-[#4F7CFF] border-[#4F7CFF] text-white'
-                : 'border-[#E5E5E3] text-[#6B6B6B] hover:border-[#4F7CFF]/40 hover:text-[#111110]'
+            onClick={() => setActiveCategory(null)}
+            className={`px-3.5 py-1.5 rounded-full text-xs font-medium transition-all border ${
+              activeCategory === null
+                ? 'bg-[#4F7CFF]/15 border-[#4F7CFF]/40 text-[#4F7CFF]'
+                : 'bg-white/[0.04] border-white/[0.07] text-white/35 hover:text-white/55 hover:border-white/15'
             }`}
           >
-            {cat}
+            All
           </button>
-        ))}
+          {categories.map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setActiveCategory(cat === activeCategory ? null : cat)}
+              className={`px-3.5 py-1.5 rounded-full text-xs font-medium transition-all border ${
+                activeCategory === cat
+                  ? 'bg-[#4F7CFF]/15 border-[#4F7CFF]/40 text-[#4F7CFF]'
+                  : 'bg-white/[0.04] border-white/[0.07] text-white/35 hover:text-white/55 hover:border-white/15'
+              }`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
       </div>
 
-      {/* Category sections */}
-      <div className="space-y-16">
+      {/* Chat area */}
+      <div className="px-5 py-8 space-y-12">
         {visibleCategories.map((cat, ci) => (
           <div key={cat.category}>
-            {/* Category header */}
-            <div className="flex items-center gap-3 mb-8">
-              <span className="w-0.5 h-6 rounded-full bg-[#4F7CFF]" />
-              <h2 className="text-lg font-bold text-[#111110]">{cat.category}</h2>
+
+            {/* Category label */}
+            <div className="flex items-center gap-2.5 mb-7">
+              <span className="w-px h-3.5 rounded-full bg-[#4F7CFF]/50" />
+              <span className="text-[10px] font-semibold uppercase tracking-[0.14em] text-white/25">
+                {cat.category}
+              </span>
             </div>
 
-            {/* Chat bubbles */}
-            <div className="space-y-2">
+            {/* Questions + answers */}
+            <div className="space-y-3">
               {cat.faqs.map((faq, fi) => {
                 const key = `${ci}-${fi}`
                 const isOpen = openKey === key
@@ -172,53 +177,43 @@ export default function FAQChatUI() {
 
                 return (
                   <div key={key}>
-                    {/* Question bubble row */}
-                    <div
-                      className="flex items-center justify-end gap-2"
-                      style={{ paddingRight: offset }}
-                    >
-                      {/* Expand button */}
+                    {/* Question bubble — right-aligned with cascade offset */}
+                    <div className="flex justify-end" style={{ paddingRight: offset }}>
                       <button
                         onClick={() => toggle(key)}
                         aria-expanded={isOpen}
-                        className={`w-7 h-7 rounded-full border flex items-center justify-center flex-shrink-0 transition-colors ${
+                        className={`px-4 py-2.5 rounded-2xl rounded-br-md text-sm font-medium transition-all text-left max-w-[320px] sm:max-w-md ${
                           isOpen
-                            ? 'border-[#4F7CFF] bg-[#4F7CFF]'
-                            : 'border-[#D5D5D3] bg-white hover:border-[#4F7CFF]/40'
-                        }`}
-                      >
-                        {isOpen
-                          ? <Minus className="w-3 h-3 text-white" />
-                          : <Plus className="w-3 h-3 text-[#6B6B6B]" />
-                        }
-                      </button>
-
-                      {/* Question pill */}
-                      <button
-                        onClick={() => toggle(key)}
-                        className={`px-4 py-2.5 rounded-2xl text-sm font-medium transition-all text-left max-w-xs sm:max-w-md ${
-                          isOpen
-                            ? 'bg-[#4F7CFF] text-white shadow-sm shadow-[#4F7CFF]/20'
-                            : 'bg-[#111110] text-white hover:bg-[#1f1f1e]'
+                            ? 'bg-[#4F7CFF] text-white shadow-lg shadow-[#4F7CFF]/25'
+                            : 'bg-[#1C1C1C] text-white/80 border border-white/[0.07] hover:bg-[#222222] hover:text-white/95'
                         }`}
                       >
                         {faq.question}
                       </button>
                     </div>
 
-                    {/* Answer — appears as LLM response */}
-                    {isOpen && (
-                      <div className="mt-3 mb-2 flex items-start gap-3 pl-2 pr-4 sm:pr-8 animate-in fade-in slide-in-from-top-2 duration-200">
-                        {/* Avatar */}
-                        <div className="w-8 h-8 rounded-full bg-[#EEF2FF] border border-[#4F7CFF]/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                          <span className="text-[10px] font-bold text-[#4F7CFF]">R</span>
-                        </div>
-                        {/* Answer bubble */}
-                        <div className="flex-1 bg-white border border-[#E5E5E3] rounded-2xl rounded-tl-sm px-5 py-4 shadow-sm">
-                          <p className="text-sm text-[#6B6B6B] leading-relaxed">{faq.answer}</p>
-                        </div>
-                      </div>
-                    )}
+                    {/* Answer — smooth AnimatePresence */}
+                    <AnimatePresence>
+                      {isOpen && (
+                        <motion.div
+                          initial={{ opacity: 0, y: -8 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -4 }}
+                          transition={{ duration: 0.2, ease: [0.4, 0, 0.2, 1] }}
+                          className="mt-3 mb-1 flex items-start gap-3 pl-0.5 pr-5 sm:pr-10"
+                        >
+                          {/* Avatar */}
+                          <div className="w-8 h-8 rounded-full flex-shrink-0 mt-0.5 flex items-center justify-center bg-gradient-to-br from-[#4F7CFF] to-[#2D5BE8] shadow-md shadow-[#4F7CFF]/30">
+                            <span className="text-[11px] font-bold text-white">R</span>
+                          </div>
+
+                          {/* Answer card */}
+                          <div className="flex-1 bg-[#161616] border border-white/[0.08] rounded-2xl rounded-tl-sm px-5 py-4">
+                            <p className="text-sm text-white/60 leading-relaxed">{faq.answer}</p>
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
                   </div>
                 )
               })}
@@ -228,13 +223,13 @@ export default function FAQChatUI() {
       </div>
 
       {/* Bottom CTA */}
-      <div className="mt-16 pt-10 border-t border-[#E5E5E3] text-center">
-        <p className="text-sm text-[#6B6B6B] mb-4">Still have questions?</p>
+      <div className="px-5 py-7 border-t border-white/[0.06] flex flex-col items-center gap-4">
+        <p className="text-xs text-white/25">Still have questions?</p>
         <a
           href={CALENDLY}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#111110] text-white text-sm font-semibold hover:bg-[#2a2a28] transition-colors"
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-[#111110] text-sm font-semibold hover:bg-white/92 transition-colors"
         >
           Book an Integration Call
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
