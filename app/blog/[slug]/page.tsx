@@ -82,6 +82,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                   if (line.startsWith('## ')) {
                     return <h2 key={i} className="text-xl font-bold text-[#111110] mt-8 mb-2">{line.replace('## ', '')}</h2>
                   }
+                  if (line.startsWith('### ')) {
+                    return <h3 key={i} className="text-base font-semibold text-[#111110] mt-6 mb-2">{line.replace('### ', '')}</h3>
+                  }
                   if (line.startsWith('# ')) {
                     return null // Already in <h1>
                   }
@@ -105,7 +108,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             {/* CTA */}
             <div className="mt-14 pt-10 border-t border-[#E5E5E3]">
               <div className="rounded-2xl border border-[#4F7CFF]/20 bg-[#EEF2FF] p-8">
-                <h3 className="text-xl font-bold text-[#111110] mb-2">Add the AI layer to your agency.</h3>
+                <p className="text-xl font-bold text-[#111110] mb-2">Add the AI layer to your agency.</p>
                 <p className="text-[#6B6B6B] text-sm mb-5">
                   White-labeled, done-for-you. Book a 30-minute call and we&apos;ll run a live audit on one of your clients.
                 </p>

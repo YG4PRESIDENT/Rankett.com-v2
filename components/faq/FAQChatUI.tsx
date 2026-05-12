@@ -163,9 +163,9 @@ export default function FAQChatUI() {
             {/* Category label */}
             <div className="flex items-center gap-2.5 mb-7">
               <span className="w-px h-3.5 rounded-full bg-[#4F7CFF]/50" />
-              <span className="text-[10px] font-semibold uppercase tracking-[0.14em] text-white/25">
+              <h2 className="text-[10px] font-semibold uppercase tracking-[0.14em] text-white/25 m-0 leading-none">
                 {cat.category}
-              </span>
+              </h2>
             </div>
 
             {/* Questions + answers */}
