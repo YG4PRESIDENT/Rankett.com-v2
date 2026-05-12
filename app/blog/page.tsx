@@ -32,8 +32,21 @@ export default function BlogPage() {
       <Header />
       <main className="pt-24">
         {/* Header */}
-        <section className="py-12 md:py-16 border-b border-[#E5E5E3]">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section
+          className="py-12 md:py-16 border-b border-[#E5E5E3] relative overflow-hidden"
+          style={{
+            background:
+              'radial-gradient(ellipse at 80% 50%, rgba(167, 191, 255, 0.45) 0%, transparent 60%), radial-gradient(ellipse at 20% 80%, rgba(196, 219, 255, 0.35) 0%, transparent 55%), radial-gradient(ellipse at 40% 20%, rgba(221, 230, 255, 0.4) 0%, transparent 50%), #F0F4FF',
+          }}
+        >
+          <div
+            className="absolute inset-0 opacity-[0.25]"
+            style={{
+              backgroundImage: 'radial-gradient(circle, #6B8EFF 1px, transparent 1px)',
+              backgroundSize: '28px 28px',
+            }}
+          />
+          <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <FadeIn direction="up">
               <p className="text-xs font-semibold uppercase tracking-wider text-[#6B6B6B] mb-2">Insights</p>
               <h1 className="text-4xl font-bold text-[#111110]">AI Search Blog</h1>

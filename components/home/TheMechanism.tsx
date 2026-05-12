@@ -41,8 +41,22 @@ const MECHANISMS = [
 
 export default function TheMechanism() {
   return (
-    <section id="mechanism" className="py-20 md:py-28 border-t border-[#E5E5E3]">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      id="mechanism"
+      className="py-20 md:py-28 border-t border-[#E5E5E3] relative overflow-hidden"
+      style={{
+        background:
+          'radial-gradient(ellipse at 30% 50%, rgba(167, 191, 255, 0.25) 0%, transparent 65%), radial-gradient(ellipse at 75% 25%, rgba(196, 219, 255, 0.20) 0%, transparent 60%), radial-gradient(ellipse at 55% 85%, rgba(221, 230, 255, 0.22) 0%, transparent 55%), #F5F7FF',
+      }}
+    >
+      <div
+        className="absolute inset-0 opacity-[0.25]"
+        style={{
+          backgroundImage: 'radial-gradient(circle, #6B8EFF 1px, transparent 1px)',
+          backgroundSize: '28px 28px',
+        }}
+      />
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn direction="up">
           <div className="mb-12">
             <p className="text-xs font-semibold uppercase tracking-wider text-[#6B6B6B] mb-3">The Mechanism</p>

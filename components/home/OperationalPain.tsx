@@ -10,8 +10,21 @@ const PAIN_BULLETS = [
 
 export default function OperationalPain() {
   return (
-    <section className="py-20 md:py-28 border-t border-[#E5E5E3]">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      className="py-20 md:py-28 border-t border-[#E5E5E3] relative overflow-hidden"
+      style={{
+        background:
+          'radial-gradient(ellipse at 80% 50%, rgba(167, 191, 255, 0.45) 0%, transparent 60%), radial-gradient(ellipse at 20% 80%, rgba(196, 219, 255, 0.35) 0%, transparent 55%), radial-gradient(ellipse at 40% 20%, rgba(221, 230, 255, 0.4) 0%, transparent 50%), #F0F4FF',
+      }}
+    >
+      <div
+        className="absolute inset-0 opacity-[0.25]"
+        style={{
+          backgroundImage: 'radial-gradient(circle, #6B8EFF 1px, transparent 1px)',
+          backgroundSize: '28px 28px',
+        }}
+      />
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Left — pain */}
           <FadeIn direction="up">
@@ -52,3 +65,4 @@ export default function OperationalPain() {
     </section>
   )
 }
+

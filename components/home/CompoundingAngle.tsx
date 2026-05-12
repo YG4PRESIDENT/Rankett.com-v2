@@ -10,8 +10,21 @@ const COVERAGE_POINTS = [
 
 export default function CompoundingAngle() {
   return (
-    <section className="py-20 md:py-28 border-t border-[#E5E5E3]">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      className="py-20 md:py-28 border-t border-[#E5E5E3] relative overflow-hidden"
+      style={{
+        background:
+          'radial-gradient(ellipse at 50% 100%, rgba(167, 191, 255, 0.45) 0%, transparent 60%), radial-gradient(ellipse at 20% 25%, rgba(196, 219, 255, 0.30) 0%, transparent 55%), radial-gradient(ellipse at 80% 10%, rgba(221, 230, 255, 0.35) 0%, transparent 50%), #F0F4FF',
+      }}
+    >
+      <div
+        className="absolute inset-0 opacity-[0.25]"
+        style={{
+          backgroundImage: 'radial-gradient(circle, #6B8EFF 1px, transparent 1px)',
+          backgroundSize: '28px 28px',
+        }}
+      />
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left — copy */}
           <FadeIn direction="up">
@@ -47,21 +60,9 @@ export default function CompoundingAngle() {
               Recommended dimensions: ~560 × 380px.
             */}
             <div
-              className="relative rounded-2xl border border-[#E5E5E3] overflow-hidden"
-              style={{
-                minHeight: 340,
-                background:
-                  'radial-gradient(ellipse at 20% 50%, rgba(167, 191, 255, 0.45) 0%, transparent 60%), radial-gradient(ellipse at 80% 20%, rgba(196, 219, 255, 0.35) 0%, transparent 55%), radial-gradient(ellipse at 60% 80%, rgba(221, 230, 255, 0.4) 0%, transparent 50%), #F0F4FF',
-              }}
+              className="relative rounded-2xl border border-[#E5E5E3] overflow-hidden bg-white/60"
+              style={{ minHeight: 340 }}
             >
-              {/* Dot matrix texture */}
-              <div
-                className="absolute inset-0 opacity-30"
-                style={{
-                  backgroundImage: 'radial-gradient(circle, #6B8EFF 1px, transparent 1px)',
-                  backgroundSize: '28px 28px',
-                }}
-              />
               {/* Placeholder bar chart */}
               <div className="absolute inset-0 flex items-end gap-2 p-8 pb-14">
                 {[
