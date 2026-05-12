@@ -62,7 +62,13 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <Header />
-      <main>
+      <main
+        className="relative"
+        style={{
+          background: 'radial-gradient(circle, rgba(107, 142, 255, 0.18) 1px, transparent 1px), radial-gradient(ellipse 90% 14% at 15% 3%, rgba(167, 191, 255, 0.58) 0%, transparent 100%), radial-gradient(ellipse 80% 12% at 85% 17%, rgba(196, 219, 255, 0.48) 0%, transparent 100%), radial-gradient(ellipse 85% 13% at 12% 34%, rgba(221, 230, 255, 0.52) 0%, transparent 100%), radial-gradient(ellipse 75% 11% at 82% 52%, rgba(167, 191, 255, 0.46) 0%, transparent 100%), radial-gradient(ellipse 82% 13% at 18% 70%, rgba(196, 219, 255, 0.50) 0%, transparent 100%), radial-gradient(ellipse 70% 11% at 80% 88%, rgba(221, 230, 255, 0.48) 0%, transparent 100%), #F0F4FF',
+          backgroundSize: '28px 28px, auto, auto, auto, auto, auto, auto, auto',
+        }}
+      >
         <HeroV2 />
         <OperationalPain />
         <TheMechanism />

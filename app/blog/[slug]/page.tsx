@@ -48,20 +48,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     <>
       <Header />
       <main
-        className="pt-24 relative overflow-hidden"
+        className="pt-24 relative"
         style={{
-          background:
-            'radial-gradient(ellipse at 30% 50%, rgba(167, 191, 255, 0.25) 0%, transparent 65%), radial-gradient(ellipse at 75% 25%, rgba(196, 219, 255, 0.20) 0%, transparent 60%), radial-gradient(ellipse at 55% 85%, rgba(221, 230, 255, 0.22) 0%, transparent 55%), #F5F7FF',
+          background: 'radial-gradient(circle, rgba(107, 142, 255, 0.18) 1px, transparent 1px), radial-gradient(ellipse 90% 22% at 15% 5%, rgba(167, 191, 255, 0.58) 0%, transparent 100%), radial-gradient(ellipse 80% 20% at 85% 35%, rgba(196, 219, 255, 0.48) 0%, transparent 100%), radial-gradient(ellipse 85% 22% at 20% 68%, rgba(221, 230, 255, 0.52) 0%, transparent 100%), radial-gradient(ellipse 75% 18% at 80% 90%, rgba(167, 191, 255, 0.46) 0%, transparent 100%), #F0F4FF',
+          backgroundSize: '28px 28px, auto, auto, auto, auto, auto',
         }}
       >
-        <div
-          className="absolute inset-0 opacity-[0.25]"
-          style={{
-            backgroundImage: 'radial-gradient(circle, #6B8EFF 1px, transparent 1px)',
-            backgroundSize: '28px 28px',
-          }}
-        />
-        <article className="relative z-10 py-12 md:py-16">
+        <article className="py-12 md:py-16">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Back */}
             <Link href="/blog/" className="inline-flex items-center gap-1.5 text-sm text-[#6B6B6B] hover:text-[#111110] mb-8">

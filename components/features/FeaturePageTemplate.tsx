@@ -33,22 +33,18 @@ export default function FeaturePageTemplate({
   return (
     <>
       <Header />
-      <main className="pt-24">
+      <main
+        className="pt-24 relative"
+        style={{
+          background: 'radial-gradient(circle, rgba(107, 142, 255, 0.18) 1px, transparent 1px), radial-gradient(ellipse 90% 22% at 15% 5%, rgba(167, 191, 255, 0.58) 0%, transparent 100%), radial-gradient(ellipse 80% 20% at 85% 35%, rgba(196, 219, 255, 0.48) 0%, transparent 100%), radial-gradient(ellipse 85% 22% at 20% 68%, rgba(221, 230, 255, 0.52) 0%, transparent 100%), radial-gradient(ellipse 75% 18% at 80% 90%, rgba(167, 191, 255, 0.46) 0%, transparent 100%), #F0F4FF',
+          backgroundSize: '28px 28px, auto, auto, auto, auto, auto',
+        }}
+      >
         {/* Hero */}
         <section
-          className="py-16 md:py-24 border-b border-[#c5d4ff]/40 relative overflow-hidden"
-          style={{
-            background: 'radial-gradient(ellipse at 20% 50%, rgba(167, 191, 255, 0.45) 0%, transparent 60%), radial-gradient(ellipse at 80% 20%, rgba(196, 219, 255, 0.35) 0%, transparent 55%), radial-gradient(ellipse at 60% 80%, rgba(221, 230, 255, 0.4) 0%, transparent 50%), #F0F4FF',
-          }}
+          className="py-16 md:py-24 border-b border-[#E5E5E3]"
         >
-          <div
-            className="absolute inset-0 opacity-30"
-            style={{
-              backgroundImage: 'radial-gradient(circle, #6B8EFF 1px, transparent 1px)',
-              backgroundSize: '28px 28px',
-            }}
-          />
-          <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <FadeIn direction="up">
               <Link href="/features/" className="inline-flex items-center gap-1.5 text-sm text-[#6B6B6B] hover:text-[#111110] mb-8">
                 <ArrowLeft className="w-3.5 h-3.5" />
@@ -73,7 +69,7 @@ export default function FeaturePageTemplate({
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#111110] text-white text-sm font-semibold hover:bg-[#2a2a28] transition-colors"
                   >
-                    Book a Call
+                    Book a Demo
                     <ArrowRight className="w-4 h-4" />
                   </a>
                 </div>
@@ -145,7 +141,7 @@ export default function FeaturePageTemplate({
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#111110] text-white text-sm font-semibold hover:bg-[#2a2a28] transition-colors"
                 >
-                  Book a Call
+                  Book a Demo
                   <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
