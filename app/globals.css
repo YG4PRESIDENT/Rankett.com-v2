@@ -37,11 +37,18 @@
   }
 }
 
-html, body {
+html {
   overflow-x: hidden;
+  /* Rail color visible on wide screens outside the 1152px content column */
+  background-color: #dce2f0;
 }
 
 body {
+  overflow-x: hidden;
+  /* Constrain content to 1152px — matches nav pill and section max-widths */
+  max-width: 1152px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, sans-serif;

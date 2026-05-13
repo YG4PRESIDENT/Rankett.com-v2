@@ -12,7 +12,20 @@ const NAV_LINKS = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0D0D0C] relative overflow-hidden mt-auto">
+    <footer className="bg-[#0a0f30] relative mt-auto">
+      {/* Gradient bridge — eases from page gradient into dark footer */}
+      <div
+        className="absolute pointer-events-none"
+        style={{
+          top: '-72px',
+          left: 0,
+          right: 0,
+          height: '72px',
+          background: 'linear-gradient(to bottom, transparent, #0a0f30)',
+          zIndex: 0,
+        }}
+      />
+
       {/* Top content */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-8">
         {/* Logo + nav row */}
@@ -58,7 +71,7 @@ export default function Footer() {
 
       {/* Ghost brand text — dot matrix via background-clip */}
       <div
-        className="relative z-10 flex items-center justify-center overflow-hidden"
+        className="relative z-10 flex items-center justify-center overflow-hidden rounded-b-xl"
         style={{ height: 'clamp(120px, 18vw, 260px)' }}
       >
         <span

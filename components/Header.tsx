@@ -87,7 +87,7 @@ export default function Header() {
             maxWidth: scrolled ? '1152px' : '100vw',
             borderRadius: scrolled ? '20px' : '0px',
             backgroundColor: scrolled
-              ? 'rgba(13, 13, 12, 0.93)'
+              ? 'rgba(15, 23, 65, 0.96)'
               : 'rgba(255, 255, 255, 0.82)',
             transition: 'max-width 350ms ease-in-out, border-radius 350ms ease-in-out, background-color 350ms ease-in-out, box-shadow 350ms ease-in-out',
           }}
@@ -138,7 +138,7 @@ export default function Header() {
                   <div
                     className={`absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[540px] rounded-2xl shadow-lg p-4 grid grid-cols-2 gap-1 ${
                       scrolled
-                        ? 'bg-[#0D0D0C] border border-white/[0.08]'
+                        ? 'bg-[#0f1741] border border-white/[0.10]'
                         : 'bg-white border border-[#E5E5E3]'
                     }`}
                     onMouseEnter={openDropdown}
@@ -268,7 +268,7 @@ export default function Header() {
       <div
         className={`md:hidden transition-all duration-200 ${
           scrolled
-            ? 'bg-[#0D0D0C]/92 backdrop-blur-md border-b border-white/[0.08]'
+            ? 'bg-[#0f1741]/96 backdrop-blur-md border-b border-white/[0.10]'
             : 'bg-white/82 backdrop-blur-sm border-b border-[#E5E5E3]'
         }`}
       >
@@ -300,7 +300,7 @@ export default function Header() {
         <div
           className={`md:hidden px-4 pb-6 pt-3 max-h-[80vh] overflow-y-auto ${
             scrolled
-              ? 'bg-[#0D0D0C] border-b border-white/[0.08]'
+              ? 'bg-[#0f1741] border-b border-white/[0.10]'
               : 'bg-white border-b border-[#E5E5E3]'
           }`}
         >
