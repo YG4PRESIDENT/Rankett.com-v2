@@ -73,7 +73,7 @@ export default function Header() {
       {/* ── Desktop nav ───────────────────────────────────────────── */}
       <div
         className={`hidden md:flex justify-center transition-all duration-350 ease-in-out ${
-          scrolled ? 'pt-3 px-5' : 'pt-0 px-0'
+          scrolled ? 'pt-3 px-4' : 'pt-0 px-0'
         }`}
       >
         {/* Pill / bar container */}
@@ -84,7 +84,7 @@ export default function Header() {
               : 'backdrop-blur-sm border-b border-[#E5E5E3]'
           }`}
           style={{
-            maxWidth: scrolled ? '960px' : '100vw',
+            maxWidth: scrolled ? '1152px' : '100vw',
             borderRadius: scrolled ? '20px' : '0px',
             backgroundColor: scrolled
               ? 'rgba(13, 13, 12, 0.93)'
