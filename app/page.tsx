@@ -23,10 +23,10 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'How is Rankett different from traditional SEO?',
+      name: 'What does Rankett actually do for my agency?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Rankett adds an advanced search coverage layer on top of what your agency already does, buyer intent blog clusters, AI search optimization, and ongoing market tracking. It bolsters your existing SEO offering rather than replacing it.',
+        text: "Rankett is a done-for-you SEO fulfillment partner that handles the advanced implementation layer your agency doesn't have bandwidth for. Every month, Rankett researches buyer-intent queries in your client's niche, writes and deploys schema-optimized blog posts, reinforces internal linking across the site, updates existing content for page freshness, and delivers a white-labeled progress report under your brand. Your team stays focused on strategy and client relationships. Rankett handles the execution, invisibly.",
       },
     },
     {
@@ -34,23 +34,23 @@ const faqSchema = {
       name: 'How long until clients see results?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: '90 days average for meaningful coverage and AI Mention Rate lift. Technical layer in weeks 1–4, buyer intent content live in month 2, compounding growth from month 3 onward.',
+        text: 'Month 1: Technical foundation, plugin setup, buyer-intent research, schema implementation. Month 2: First buyer-intent blog cluster goes live on the client site. Month 3 onward: Content compounds as posts index, internal links accumulate topical authority, and AI platforms begin surfacing the content. Meaningful search coverage lift and AI Mention Rate improvement typically show by the 90-day mark. Results compound each month as the cluster grows.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Can I fully white-label Rankett?',
+      name: 'Is Rankett fully white-labeled?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes, completely. Your logo, your domain, your colors. Clients see your platform. Rankett is invisible. Setup takes 5 minutes.',
+        text: "Yes. Rankett is 100% ghost white-labeled. Your agency configures its logo, brand colors, and a custom subdomain in under 5 minutes. Clients see your branding on their dashboard, their monthly reports, and every deliverable. Rankett never appears anywhere in the client-facing experience. The onboarding flow, the progress dashboard, and the reports all carry your agency's identity.",
       },
     },
     {
       '@type': 'Question',
-      name: "What's the guarantee if deliverables are late?",
+      name: "What's the guarantee if a deliverable is late?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Full month refund if we are even one minute late. Agencies have final approval and rejection rights on every deliverable.',
+        text: "Full month refund, no questions asked, if we are even one minute late on any deliverable. Agencies hold final approval and rejection rights on every piece of content before it goes live. If a deliverable doesn't meet your standard, we fix it or you don't pay. This isn't a standard SLA clause, it's how we operate.",
       },
     },
   ],
