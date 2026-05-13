@@ -27,7 +27,7 @@ export default function WhitelabelBanner() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#111110] text-white text-sm font-semibold hover:bg-[#2a2a28] transition-colors shrink-0"
               >
-                Book a Call
+                Book a Demo
                 <ArrowRight className="w-4 h-4" />
               </a>
             </div>

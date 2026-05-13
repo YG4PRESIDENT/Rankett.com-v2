@@ -39,8 +39,8 @@
 
 html {
   overflow-x: hidden;
-  /* Rail color visible on wide screens outside the 1152px content column */
-  background-color: #dce2f0;
+  /* Matches footer — bottom overscroll continues the dark instead of flashing white */
+  background-color: #0a0f30;
 }
 
 body {
@@ -49,7 +49,8 @@ body {
   max-width: 1152px;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--color-bg);
+  /* Matches gradient base — top overscroll blends into the hero gradient */
+  background-color: #F0F4FF;
   color: var(--color-text);
   font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;

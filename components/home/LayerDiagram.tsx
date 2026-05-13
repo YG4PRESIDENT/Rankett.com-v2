@@ -1,8 +1,8 @@
 const LAYERS = [
   {
-    label: 'Compounding Authority',
+    label: 'Advanced SEO',
     badge: 'Rankett',
-    desc: 'Buyer intent · AI search · Retrieval dominance',
+    desc: 'Buyer intent coverage · AI search · Compounding authority',
     accent: true,
     dotBg: 'rgba(79, 124, 255, 0.90)',
     dotGlow: '0 0 6px rgba(79, 124, 255, 0.50)',
@@ -10,23 +10,15 @@ const LAYERS = [
   {
     label: 'Traditional SEO',
     badge: null,
-    desc: 'Keywords · Backlinks · On-page',
+    desc: 'Rankings · Backlinks · Keyword content',
     accent: false,
     dotBg: 'rgba(123, 148, 218, 0.70)',
     dotGlow: 'none',
   },
   {
-    label: 'Directory Management',
+    label: 'Technical foundation',
     badge: null,
-    desc: 'Citations · NAP · Local listings',
-    accent: false,
-    dotBg: 'rgba(160, 178, 228, 0.70)',
-    dotGlow: 'none',
-  },
-  {
-    label: 'GBP',
-    badge: 'Core',
-    desc: 'Google Business Profile',
+    desc: 'Site architecture · On-page · Crawlability',
     accent: false,
     dotBg: 'rgba(190, 204, 240, 0.80)',
     dotGlow: 'none',
@@ -41,19 +33,13 @@ const RINGS = [
     boxShadow: '0 0 28px rgba(79, 124, 255, 0.20), 0 0 8px rgba(79, 124, 255, 0.12)',
   },
   {
-    inset: '16%',
+    inset: '20%',
     background: 'rgba(128, 150, 220, 0.12)',
     border: '1.5px solid rgba(128, 150, 220, 0.36)',
     boxShadow: 'none',
   },
   {
-    inset: '32%',
-    background: 'rgba(165, 182, 232, 0.18)',
-    border: '1.5px solid rgba(165, 182, 232, 0.38)',
-    boxShadow: 'none',
-  },
-  {
-    inset: '44%',
+    inset: '40%',
     background: 'linear-gradient(145deg, #ffffff 0%, #edf0ff 100%)',
     border: '1.5px solid rgba(190, 204, 240, 0.55)',
     boxShadow: '0 2px 8px rgba(79, 124, 255, 0.06)',
@@ -80,8 +66,8 @@ export default function LayerDiagram() {
         ))}
       </div>
 
-      {/* 2-column label grid — sits cleanly below the rings */}
-      <div className="grid grid-cols-2 gap-x-6 gap-y-4 w-full max-w-[340px]">
+      {/* Label list — sits cleanly below the rings */}
+      <div className="flex flex-col gap-3 w-full max-w-[280px]">
         {LAYERS.map((layer, i) => (
           <div key={i} className="flex items-start gap-2">
             <div

@@ -81,20 +81,20 @@ export default function Header() {
           className={`w-full transition-all duration-350 ease-in-out ${
             scrolled
               ? 'backdrop-blur-xl shadow-2xl shadow-black/20 border border-white/[0.09]'
-              : 'backdrop-blur-sm border-b border-[#E5E5E3]'
+              : ''
           }`}
           style={{
             maxWidth: scrolled ? '1152px' : '100vw',
             borderRadius: scrolled ? '20px' : '0px',
             backgroundColor: scrolled
               ? 'rgba(15, 23, 65, 0.96)'
-              : 'rgba(255, 255, 255, 0.82)',
+              : 'transparent',
             transition: 'max-width 350ms ease-in-out, border-radius 350ms ease-in-out, background-color 350ms ease-in-out, box-shadow 350ms ease-in-out',
           }}
         >
           <div
             className={`flex items-center justify-between transition-all duration-350 ${
-              scrolled ? 'h-14 px-5' : 'h-16 px-8'
+              scrolled ? 'h-20 px-6' : 'h-24 px-8'
             }`}
             style={{ maxWidth: scrolled ? 'none' : '72rem', margin: '0 auto' }}
           >
@@ -103,9 +103,9 @@ export default function Header() {
               <Image
                 src="/images/Rankett_Logo.png"
                 alt="Rankett"
-                width={110}
-                height={32}
-                className={`h-8 w-auto transition-all duration-300 ${scrolled ? 'brightness-0 invert' : ''}`}
+                width={240}
+                height={84}
+                className={`w-auto h-[84px] transition-all duration-300 ${scrolled ? 'brightness-0 invert' : ''}`}
                 priority
               />
             </Link>
@@ -269,17 +269,17 @@ export default function Header() {
         className={`md:hidden transition-all duration-200 ${
           scrolled
             ? 'bg-[#0f1741]/96 backdrop-blur-md border-b border-white/[0.10]'
-            : 'bg-white/82 backdrop-blur-sm border-b border-[#E5E5E3]'
+            : ''
         }`}
       >
-        <div className="flex items-center justify-between h-16 px-4">
+        <div className="flex items-center justify-between h-20 px-4">
           <Link href="/">
             <Image
               src="/images/Rankett_Logo.png"
               alt="Rankett"
-              width={110}
-              height={32}
-              className={`h-8 w-auto transition-all duration-200 ${scrolled ? 'brightness-0 invert' : ''}`}
+              width={240}
+              height={84}
+              className={`w-auto h-16 transition-all duration-200 ${scrolled ? 'brightness-0 invert' : ''}`}
               priority
             />
           </Link>

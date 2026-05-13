@@ -1,36 +1,30 @@
 import Image from 'next/image'
-import LayerDiagram from '@/components/home/LayerDiagram'
 
 const CALENDLY = 'https://calendly.com/rankett/30min'
 
 const TRUST_ITEMS = [
-  '5-minute setup',
-  'WordPress plugin',
-  'Dedicated success manager',
-  'White-label reporting',
+  { label: '5-minute setup' },
+  { label: 'WordPress plugin' },
+  { label: 'Dedicated success manager' },
+  { label: 'White-label reporting' },
 ]
 
 const AI_PLATFORMS = [
-  { src: '/logos/chatgpt.svg', alt: 'ChatGPT' },
-  { src: '/logos/gemini.svg', alt: 'Gemini' },
-  { src: '/logos/perplexity.svg', alt: 'Perplexity' },
+  { src: '/logos/openai.svg', alt: 'OpenAI' },
+  { src: '/logos/claude-color.svg', alt: 'Claude' },
+  { src: '/logos/gemini-color.svg', alt: 'Gemini' },
+  { src: '/logos/perplexity-color.svg', alt: 'Perplexity' },
 ]
 
 export default function HeroV2() {
   return (
-    <section className="pt-28 pb-16 md:pt-36 md:pb-24">
+    <section className="pt-32 pb-16 md:pt-40 md:pb-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Two-column hero: copy left, layer diagram right */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-10 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.15fr] gap-10 lg:gap-6 items-center">
 
           {/* ── Left: Copy ─────────────────────────────────────────── */}
-          <div>
-            {/* Eyebrow */}
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#E5E5E3] bg-white text-xs font-medium text-[#6B6B6B] mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#4F7CFF]" />
-              White-label SEO fulfillment · done-for-you
-            </div>
+          <div className="max-w-xl">
 
             {/* Headline */}
             <h1 className="text-4xl sm:text-5xl font-bold text-[#111110] leading-[1.08] tracking-tight mb-5">
@@ -39,7 +33,7 @@ export default function HeroV2() {
 
             {/* Subheadline */}
             <p className="text-lg text-[#6B6B6B] leading-relaxed mb-8">
-              White-label authority reinforcement, buyer-intent content coverage, and ongoing search intelligence for agencies managing growth.
+              Buyer-intent content, AI search visibility, and compounding authority. White-labeled, done for you.
             </p>
 
             {/* CTAs */}
@@ -65,33 +59,41 @@ export default function HeroV2() {
               </a>
             </div>
 
-            {/* Trust line */}
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-              {TRUST_ITEMS.map((item, i) => (
-                <span key={item} className="flex items-center gap-1.5 text-xs text-[#9B9B9B]">
-                  {i > 0 && <span className="w-px h-3 bg-[#E5E5E3]" />}
-                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-                    <path d="M2 5l2 2 4-4" stroke="#4F7CFF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                  {item}
-                </span>
+            {/* Trust badges */}
+            <div className="flex flex-wrap gap-2">
+              {TRUST_ITEMS.map((item) => (
+                <div
+                  key={item.label}
+                  className="flex items-center gap-2 bg-white border border-[#E5E5E3] rounded-lg px-3 py-2"
+                >
+                  <span className="flex items-center justify-center w-4 h-4 rounded-full bg-[#EEF2FF] flex-shrink-0">
+                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
+                      <path d="M1.5 4l1.5 1.5L6.5 2" stroke="#4F7CFF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </span>
+                  <span className="text-xs font-medium text-[#111110] whitespace-nowrap">{item.label}</span>
+                </div>
               ))}
             </div>
           </div>
 
-          {/* ── Right: Layer diagram ────────────────────────────────── */}
-          <div className="flex justify-center">
-            <div className="flex flex-col items-center">
-              <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-[#9B9B9B] mb-5">
-                Where Rankett fits in your stack
-              </p>
-              <LayerDiagram />
+          {/* ── Right: Orb diagram ──────────────────────────────────── */}
+          <div className="flex items-center justify-center lg:justify-end">
+            <div className="relative w-full max-w-[600px]">
+              <Image
+                src="/images/orb-diagram.png"
+                alt="Where Rankett fits in your agency's SEO stack: AI Layer, Advanced SEO, Traditional SEO, and client foundation"
+                width={1024}
+                height={1024}
+                className="w-full h-auto"
+                priority
+              />
             </div>
           </div>
 
         </div>
 
-        {/* Platform logos — full width below both columns */}
+        {/* Platform logos */}
         <div className="mt-16 pt-8 border-t border-[#E5E5E3]">
           <p className="text-xs text-[#9B9B9B] mb-4">Your clients ranked in</p>
           <div className="flex items-center gap-5">
@@ -102,7 +104,7 @@ export default function HeroV2() {
                 alt={p.alt}
                 width={24}
                 height={24}
-                className="w-6 h-6 opacity-50 grayscale"
+                className="w-6 h-6"
               />
             ))}
             <span className="text-xs text-[#9B9B9B]">and more</span>
