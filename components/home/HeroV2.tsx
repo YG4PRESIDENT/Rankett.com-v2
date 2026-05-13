@@ -80,9 +80,8 @@ export default function HeroV2() {
           </div>
 
           {/* ── Right: Layer diagram ────────────────────────────────── */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="lg:pr-4">
-              {/* Section label above diagram */}
+          <div className="flex justify-center">
+            <div className="flex flex-col items-center">
               <p className="text-[10px] font-semibold uppercase tracking-[0.14em] text-[#9B9B9B] mb-5">
                 Where Rankett fits in your stack
               </p>
