@@ -5,17 +5,17 @@ const ADVANTAGES = [
   {
     icon: Plug,
     title: 'Seamless WordPress Plugin',
-    body: 'Install once. Rankett pushes all content, schema, and updates directly — no credentials, no admin access needed.',
+    body: 'Install once. Rankett pushes all content, schema, and updates directly, no credentials, no admin access needed.',
   },
   {
     icon: Users,
     title: 'Dedicated Success Manager',
-    body: 'A real human who knows your clients\' accounts. Not a ticket queue — a named contact who is accountable to your results.',
+    body: 'A real human who knows your clients\' accounts. Not a ticket queue, a named contact who is accountable to your results.',
   },
   {
     icon: LayoutDashboard,
     title: 'White-Label Dashboard',
-    body: 'Run analyses, view delivery progress, and show clients their visibility score — all under your brand. Rankett is invisible.',
+    body: 'Run analyses, view delivery progress, and show clients their visibility score, all under your brand. Rankett is invisible.',
   },
 ]
 

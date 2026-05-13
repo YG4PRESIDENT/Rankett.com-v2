@@ -17,7 +17,7 @@ const FEATURES = [
   {
     icon: FileText,
     name: 'Monthly Reports',
-    description: 'Prompt/search coverage, buyer intent shifts, and a progress report — white-labeled and delivered to your clients.',
+    description: 'Prompt/search coverage, buyer intent shifts, and a progress report, white-labeled and delivered to your clients.',
     href: '/features/monthly-reports/',
   },
   {
@@ -29,7 +29,7 @@ const FEATURES = [
   {
     icon: Pen,
     name: 'Content Creation',
-    description: 'Page freshness, compounding internal linking, and baked-in blog schema — every piece of content built to compound.',
+    description: 'Page freshness, compounding internal linking, and baked-in blog schema, every piece of content built to compound.',
     href: '/features/content-creation/',
   },
 ]

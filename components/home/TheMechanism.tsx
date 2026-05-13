@@ -10,7 +10,7 @@ const MECHANISMS = [
   {
     icon: Search,
     name: 'Market Intent Tracking',
-    description: 'Weekly scraping of buyer intent signals — Google, ChatGPT, Perplexity, niche forums. Updated every 7 days.',
+    description: 'Weekly scraping of buyer intent signals, Google, ChatGPT, Perplexity, niche forums. Updated every 7 days.',
   },
   {
     icon: Pen,
@@ -20,7 +20,7 @@ const MECHANISMS = [
   {
     icon: Link2,
     name: 'Internal Link Reinforcement',
-    description: 'Every new post links back to existing content — compounding topical authority with each publish.',
+    description: 'Every new post links back to existing content, compounding topical authority with each publish.',
   },
   {
     icon: Code2,
@@ -30,12 +30,12 @@ const MECHANISMS = [
   {
     icon: RefreshCw,
     name: 'Page Freshness Reinforcement',
-    description: 'Existing content updated monthly — recency signals for Google and AI retrieval models.',
+    description: 'Existing content updated monthly, recency signals for Google and AI retrieval models.',
   },
   {
     icon: FileText,
     name: 'White-Label Reporting',
-    description: 'Coverage metrics, intent shifts, and deliverable progress — under your brand, sent to your clients.',
+    description: 'Coverage metrics, intent shifts, and deliverable progress, under your brand, sent to your clients.',
   },
 ]
 
@@ -53,7 +53,7 @@ export default function TheMechanism() {
               The operational layer your agency never has to think about.
             </h2>
             <p className="mt-3 text-sm text-[#6B6B6B] max-w-xl leading-relaxed">
-              Every deliverable is built, optimized, and deployed by Rankett — without touching your team&apos;s bandwidth.
+              Every deliverable is built, optimized, and deployed by Rankett, without touching your team&apos;s bandwidth.
             </p>
           </div>
         </FadeIn>

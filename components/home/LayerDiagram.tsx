@@ -50,7 +50,7 @@ export default function LayerDiagram() {
   return (
     <div className="flex flex-col items-center gap-7">
 
-      {/* Concentric rings — flat, centered, large */}
+      {/* Concentric rings, flat, centered, large */}
       <div className="relative" style={{ width: '220px', height: '220px' }}>
         {RINGS.map((ring, i) => (
           <div
@@ -66,7 +66,7 @@ export default function LayerDiagram() {
         ))}
       </div>
 
-      {/* Label list — sits cleanly below the rings */}
+      {/* Label list, sits cleanly below the rings */}
       <div className="flex flex-col gap-3 w-full max-w-[280px]">
         {LAYERS.map((layer, i) => (
           <div key={i} className="flex items-start gap-2">

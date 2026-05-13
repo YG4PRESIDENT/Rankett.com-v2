@@ -3,7 +3,7 @@ import { FileText } from 'lucide-react'
 import FeaturePageTemplate from '@/components/features/FeaturePageTemplate'
 
 export const metadata: Metadata = {
-  title: 'Research & Diagnosis — Rankett',
+  title: 'Research & Diagnosis, Rankett',
   description: 'Query analysis across thousands of AI prompts to surface exactly what\'s driving visibility gaps for each client.',
   alternates: { canonical: 'https://rankett.com/features/research-diagnosis/' },
 }
@@ -39,7 +39,7 @@ export default function ResearchDiagnosisPage() {
     <FeaturePageTemplate
       eyebrow="Research"
       title="Understand exactly why clients aren't showing up."
-      description="The gap between a client being invisible in AI search and being cited consistently often comes down to a handful of specific prompts and content signals. Rankett's research layer finds those gaps — and our fulfillment layer closes them."
+      description="The gap between a client being invisible in AI search and being cited consistently often comes down to a handful of specific prompts and content signals. Rankett's research layer finds those gaps, and our fulfillment layer closes them."
       Icon={FileText}
       steps={[
         {

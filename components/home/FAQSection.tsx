@@ -8,7 +8,7 @@ import FadeIn from '@/components/scroll/FadeIn'
 const FAQS = [
   {
     question: 'How is Rankett different from traditional SEO?',
-    answer: 'Rankett adds an advanced search coverage layer on top of what your agency already does — buyer intent blog clusters, AI search optimization, and ongoing market tracking. It bolsters your existing SEO offering rather than replacing it.',
+    answer: 'Rankett adds an advanced search coverage layer on top of what your agency already does, buyer intent blog clusters, AI search optimization, and ongoing market tracking. It bolsters your existing SEO offering rather than replacing it.',
   },
   {
     question: 'How long until clients see results?',
@@ -16,7 +16,7 @@ const FAQS = [
   },
   {
     question: 'Can I fully white-label Rankett?',
-    answer: 'Yes — completely. Your logo, your domain, your colors. Clients see your platform. Rankett is invisible. Setup takes 5 minutes.',
+    answer: 'Yes, completely. Your logo, your domain, your colors. Clients see your platform. Rankett is invisible. Setup takes 5 minutes.',
   },
   {
     question: "What's the guarantee if deliverables are late?",

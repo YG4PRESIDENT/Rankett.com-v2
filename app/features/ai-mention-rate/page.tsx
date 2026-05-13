@@ -3,14 +3,14 @@ import { BarChart2 } from 'lucide-react'
 import FeaturePageTemplate from '@/components/features/FeaturePageTemplate'
 
 export const metadata: Metadata = {
-  title: 'AI Mention Rate Tracking — Rankett',
+  title: 'AI Mention Rate Tracking, Rankett',
   description: 'Know exactly how often your clients are cited by ChatGPT, Gemini, and Perplexity. Real numbers, monthly tracking, white-labeled reports.',
   alternates: { canonical: 'https://rankett.com/features/ai-mention-rate/' },
 }
 
 const mockup = (
   <div className="space-y-4">
-    <p className="text-xs font-semibold uppercase tracking-wider text-[#6B6B6B]">AI Mention Rate — May 2026</p>
+    <p className="text-xs font-semibold uppercase tracking-wider text-[#6B6B6B]">AI Mention Rate, May 2026</p>
     {[
       { platform: 'ChatGPT', rate: 78, trend: '+12%' },
       { platform: 'Perplexity', rate: 54, trend: '+8%' },
@@ -37,7 +37,7 @@ export default function AIMentionRatePage() {
     <FeaturePageTemplate
       eyebrow="Analytics"
       title="Know exactly how often AI cites your clients."
-      description="AI Mention Rate is the core metric of AI search visibility. Rankett queries hundreds of prompts across every major AI platform and tells you exactly how often each client gets cited — and whether that number is going up."
+      description="AI Mention Rate is the core metric of AI search visibility. Rankett queries hundreds of prompts across every major AI platform and tells you exactly how often each client gets cited, and whether that number is going up."
       Icon={BarChart2}
       steps={[
         {
@@ -50,7 +50,7 @@ export default function AIMentionRatePage() {
         },
         {
           title: 'You see the trend over time',
-          description: 'Monthly reports show clients their score trending upward — proof that the work is working. White-labeled in your brand.',
+          description: 'Monthly reports show clients their score trending upward, proof that the work is working. White-labeled in your brand.',
         },
       ]}
       whatYouGet={[

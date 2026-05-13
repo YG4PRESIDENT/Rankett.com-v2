@@ -15,14 +15,14 @@ export default function CompoundingAngle() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Left — copy */}
+          {/* Left, copy */}
           <FadeIn direction="up">
             <p className="text-xs font-semibold uppercase tracking-wider text-[#6B6B6B] mb-4">The Compounding Effect</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#111110] leading-tight mb-5">
               Search coverage compounds over time.
             </h2>
             <p className="text-[#6B6B6B] leading-relaxed mb-8">
-              SEO is no longer about ranking a few pages. It&apos;s about accumulating market surface area — the total volume of queries, topics, and buyer intent signals your clients show up for. Every month Rankett runs, that surface gets wider.
+              SEO is no longer about ranking a few pages. It&apos;s about accumulating market surface area, the total volume of queries, topics, and buyer intent signals your clients show up for. Every month Rankett runs, that surface gets wider.
             </p>
             <ul className="space-y-3 mb-8">
               {COVERAGE_POINTS.map((point) => (
@@ -41,7 +41,7 @@ export default function CompoundingAngle() {
             </p>
           </FadeIn>
 
-          {/* Right — visual placeholder */}
+          {/* Right, visual placeholder */}
           <FadeIn direction="up" delay={0.1}>
             {/*
               ── Replace this block with user-supplied compounding chart artwork ──
@@ -87,7 +87,7 @@ export default function CompoundingAngle() {
               {/* Label */}
               <div className="absolute top-5 left-6 right-6">
                 <p className="text-xs font-semibold text-[#111110]">Market coverage surface area</p>
-                <p className="text-[10px] text-[#9B9B9B] mt-0.5">Growing month over month — automatically</p>
+                <p className="text-[10px] text-[#9B9B9B] mt-0.5">Growing month over month, automatically</p>
               </div>
 
               {/* Growth callout */}

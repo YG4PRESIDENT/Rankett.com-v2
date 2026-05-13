@@ -3,8 +3,8 @@ import { Search } from 'lucide-react'
 import FeaturePageTemplate from '@/components/features/FeaturePageTemplate'
 
 export const metadata: Metadata = {
-  title: 'AI Visibility Audit — Rankett',
-  description: 'A full diagnosis of where each client shows up across AI platforms — and where competitors are winning. Delivered in minutes.',
+  title: 'AI Visibility Audit, Rankett',
+  description: 'A full diagnosis of where each client shows up across AI platforms, and where competitors are winning. Delivered in minutes.',
   alternates: { canonical: 'https://rankett.com/features/ai-visibility-audit/' },
 }
 
@@ -47,7 +47,7 @@ export default function AIVisibilityAuditPage() {
     <FeaturePageTemplate
       eyebrow="Diagnosis"
       title="A complete AI visibility audit for any client."
-      description="Drop in a domain. Rankett runs a full AI visibility diagnosis — querying AI platforms, analyzing technical signals, benchmarking against competitors — and surfaces exactly what needs to be fixed and in what order."
+      description="Drop in a domain. Rankett runs a full AI visibility diagnosis, querying AI platforms, analyzing technical signals, benchmarking against competitors, and surfaces exactly what needs to be fixed and in what order."
       Icon={Search}
       steps={[
         {
@@ -60,7 +60,7 @@ export default function AIVisibilityAuditPage() {
         },
         {
           title: 'You get a ranked action plan',
-          description: 'The audit produces a prioritized fix list. The highest-impact items become the fulfillment roadmap — and Rankett executes everything.',
+          description: 'The audit produces a prioritized fix list. The highest-impact items become the fulfillment roadmap, and Rankett executes everything.',
         },
       ]}
       whatYouGet={[

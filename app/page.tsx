@@ -12,8 +12,8 @@ import FAQSection from '@/components/home/FAQSection'
 import GradientCTA from '@/components/home/GradientCTA'
 
 export const metadata: Metadata = {
-  title: 'Rankett — Advanced Search Coverage for Agencies | SEO + AI Search',
-  description: 'Add advanced search coverage to your agency\'s offering. Buyer intent blog clusters, market tracking, white-label reporting — done-for-you. Takes 5 minutes to start.',
+  title: 'Rankett, Advanced Search Coverage for Agencies | SEO + AI Search',
+  description: 'Add advanced search coverage to your agency\'s offering. Buyer intent blog clusters, market tracking, white-label reporting, done-for-you. Takes 5 minutes to start.',
   alternates: { canonical: 'https://rankett.com' },
 }
 
@@ -26,7 +26,7 @@ const faqSchema = {
       name: 'How is Rankett different from traditional SEO?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Rankett adds an advanced search coverage layer on top of what your agency already does — buyer intent blog clusters, AI search optimization, and ongoing market tracking. It bolsters your existing SEO offering rather than replacing it.',
+        text: 'Rankett adds an advanced search coverage layer on top of what your agency already does, buyer intent blog clusters, AI search optimization, and ongoing market tracking. It bolsters your existing SEO offering rather than replacing it.',
       },
     },
     {
@@ -42,7 +42,7 @@ const faqSchema = {
       name: 'Can I fully white-label Rankett?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes — completely. Your logo, your domain, your colors. Clients see your platform. Rankett is invisible. Setup takes 5 minutes.',
+        text: 'Yes, completely. Your logo, your domain, your colors. Clients see your platform. Rankett is invisible. Setup takes 5 minutes.',
       },
     },
     {

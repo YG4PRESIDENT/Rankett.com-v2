@@ -19,14 +19,14 @@ export default function EarthLayerDiagram() {
                 className="w-full max-w-[420px] mx-auto"
                 aria-label="Rankett layer diagram"
               >
-                {/* Outer glow ring — Rankett layer */}
+                {/* Outer glow ring, Rankett layer */}
                 <circle cx="240" cy="240" r="225" fill="#EEF2FF" stroke="#4F7CFF" strokeWidth="2" />
                 <circle cx="240" cy="240" r="225" fill="none" stroke="#4F7CFF" strokeWidth="1.5" strokeDasharray="6 4" opacity="0.4" />
 
                 {/* Traditional search coverage ring */}
                 <circle cx="240" cy="240" r="170" fill="#F5F5F3" stroke="#E5E5E3" strokeWidth="1.5" />
 
-                {/* Core — what agencies already offer */}
+                {/* Core, what agencies already offer */}
                 <circle cx="240" cy="240" r="112" fill="white" stroke="#E5E5E3" strokeWidth="1.5" />
 
                 {/* Core labels */}
@@ -36,11 +36,11 @@ export default function EarthLayerDiagram() {
                 {/* Middle ring label */}
                 <text x="240" y="330" textAnchor="middle" fontSize="10" fill="#9B9B9B" fontFamily="inherit">Traditional search coverage</text>
 
-                {/* Outer ring — Rankett — top arc label */}
+                {/* Outer ring, Rankett, top arc label */}
                 <path id="topArc" d="M 60 200 A 180 180 0 0 1 420 200" fill="none" />
                 <text fontSize="13" fontWeight="600" fill="#4F7CFF" fontFamily="inherit">
                   <textPath href="#topArc" startOffset="50%" textAnchor="middle">
-                    AI Search Visibility — Rankett
+                    AI Search Visibility, Rankett
                   </textPath>
                 </text>
 
@@ -70,13 +70,13 @@ export default function EarthLayerDiagram() {
                 We add the outer layer.
               </h2>
               <p className="text-[#6B6B6B] leading-relaxed">
-                Traditional SEO, PPC, content — your agency already handles that. But AI models like ChatGPT and Perplexity operate on a completely different layer. Rankett is the plug-in that covers that gap, without replacing anything you already do.
+                Traditional SEO, PPC, content, your agency already handles that. But AI models like ChatGPT and Perplexity operate on a completely different layer. Rankett is the plug-in that covers that gap, without replacing anything you already do.
               </p>
 
               <ul className="space-y-3 pt-2">
                 {[
                   { label: 'AI Mention Rate tracking', sub: 'Know exactly how often each client is cited by AI models' },
-                  { label: 'Done-for-you AI content', sub: 'We create and deploy the content — you take the credit' },
+                  { label: 'Done-for-you AI content', sub: 'We create and deploy the content, you take the credit' },
                   { label: 'White-label everything', sub: 'Your brand, your domain, your client relationship' },
                 ].map((item) => (
                   <li key={item.label} className="flex gap-3">

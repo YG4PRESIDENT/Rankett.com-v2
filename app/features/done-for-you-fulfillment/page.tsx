@@ -3,8 +3,8 @@ import { CheckCircle } from 'lucide-react'
 import FeaturePageTemplate from '@/components/features/FeaturePageTemplate'
 
 export const metadata: Metadata = {
-  title: 'Done-For-You Fulfillment — Rankett',
-  description: 'Schema markup, AI-optimized blog posts, FAQ content, LLMs.txt, and authority placements — Rankett builds and deploys everything for your clients.',
+  title: 'Done-For-You Fulfillment, Rankett',
+  description: 'Schema markup, AI-optimized blog posts, FAQ content, LLMs.txt, and authority placements, Rankett builds and deploys everything for your clients.',
   alternates: { canonical: 'https://rankett.com/features/done-for-you-fulfillment/' },
 }
 
@@ -37,12 +37,12 @@ export default function DoneForYouFulfillmentPage() {
     <FeaturePageTemplate
       eyebrow="Fulfillment"
       title="We do the work. You take the credit."
-      description="Schema markup, AI-optimized blog posts, FAQ content, LLMs.txt, authority placements — Rankett builds and deploys every deliverable. Your clients see progress; you never have to touch the work."
+      description="Schema markup, AI-optimized blog posts, FAQ content, LLMs.txt, authority placements, Rankett builds and deploys every deliverable. Your clients see progress; you never have to touch the work."
       Icon={CheckCircle}
       steps={[
         {
           title: 'Rankett builds the deliverables',
-          description: 'Our team generates AI-optimized content, schema markup, FAQ expansions, LLMs.txt files, and authority placements — based on the audit findings for each client.',
+          description: 'Our team generates AI-optimized content, schema markup, FAQ expansions, LLMs.txt files, and authority placements, based on the audit findings for each client.',
         },
         {
           title: 'You review and approve',
@@ -50,7 +50,7 @@ export default function DoneForYouFulfillmentPage() {
         },
         {
           title: 'We deploy directly to the site',
-          description: 'Via WordPress plugin, DNS-level injection, or manual delivery — Rankett deploys content directly. No asking clients for logins, no back-and-forth.',
+          description: 'Via WordPress plugin, DNS-level injection, or manual delivery, Rankett deploys content directly. No asking clients for logins, no back-and-forth.',
         },
       ]}
       whatYouGet={[

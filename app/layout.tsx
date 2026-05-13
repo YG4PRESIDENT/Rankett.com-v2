@@ -1,23 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import OverscrollSync from "@/components/OverscrollSync";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Rankett — AI Visibility for Agencies | White-Label AI Search Optimization",
-  description: "Add AI visibility to your agency's offering. Rankett handles everything — analysis, content, fulfillment. White-labeled, done-for-you. Takes 5 minutes to start.",
+  title: "Rankett | AI Visibility for Agencies | White-Label AI Search Optimization",
+  description: "Add AI visibility to your agency's offering. Rankett handles everything: analysis, content, fulfillment. White-labeled, done-for-you. Takes 5 minutes to start.",
   openGraph: {
-    title: "Rankett — AI Visibility for Agencies",
+    title: "Rankett | AI Visibility for Agencies",
     description: "The AI search layer for your agency. White-label, done-for-you fulfillment. Takes 5 minutes.",
     url: "https://rankett.com",
     siteName: "Rankett",
@@ -25,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rankett — AI Visibility for Agencies",
+    title: "Rankett | AI Visibility for Agencies",
     description: "The AI search layer for your agency. White-label, done-for-you.",
   },
   robots: { index: true, follow: true },
@@ -40,10 +36,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        {/* Gradient lives here — position:fixed so it covers the full viewport at all
+        {/* Gradient layer — position:fixed so it covers the full viewport at all
             scroll positions, including macOS overscroll bounce areas */}
         <div
           aria-hidden="true"

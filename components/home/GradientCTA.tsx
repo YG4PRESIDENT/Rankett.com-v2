@@ -29,7 +29,7 @@ export default function GradientCTA() {
                 Ready to bolster your agency&apos;s search coverage?
               </h2>
               <p className="text-[#3a4a8c] text-base md:text-lg">
-                Add advanced SEO and AI search coverage to your existing offering — white-labeled, done-for-you, and running in 5 minutes.
+                Add advanced SEO and AI search coverage to your existing offering, white-labeled, done-for-you, and running in 5 minutes.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
                 <a

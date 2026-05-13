@@ -3,14 +3,14 @@ import { Search } from 'lucide-react'
 import FeaturePageTemplate from '@/components/features/FeaturePageTemplate'
 
 export const metadata: Metadata = {
-  title: 'Market Buyer Intent Tracking — Rankett',
+  title: 'Market Buyer Intent Tracking, Rankett',
   description: 'Ongoing scraping of buyer intent signals across your niche and location to fuel a smarter content strategy.',
   alternates: { canonical: 'https://rankett.com/features/market-buyer-intent/' },
 }
 
 const mockup = (
   <div className="space-y-4">
-    <p className="text-xs font-semibold uppercase tracking-wider text-[#6B6B6B]">Buyer Intent Feed — Austin Plumbing</p>
+    <p className="text-xs font-semibold uppercase tracking-wider text-[#6B6B6B]">Buyer Intent Feed, Austin Plumbing</p>
     <div className="space-y-2">
       {[
         { query: '"emergency plumber austin" queries', trend: '▲ +47% this month', type: 'High Priority' },
@@ -38,25 +38,25 @@ export default function MarketBuyerIntentPage() {
     <FeaturePageTemplate
       eyebrow="Research"
       title="Always know what buyers in your client's market are searching for."
-      description="Generic content doesn't compound. Rankett scrapes buyer intent signals across your client's specific niche, location, and service lines — on an ongoing basis — so the content strategy targets queries that actually convert."
+      description="Generic content doesn't compound. Rankett scrapes buyer intent signals across your client's specific niche, location, and service lines, on an ongoing basis, so the content strategy targets queries that actually convert."
       Icon={Search}
       steps={[
         {
           title: 'We scrape the market continuously',
-          description: "Rankett monitors buyer intent signals across Google Search, AI platforms, and niche forums for your client's specific market — updated weekly, not once at onboarding.",
+          description: "Rankett monitors buyer intent signals across Google Search, AI platforms, and niche forums for your client's specific market, updated weekly, not once at onboarding.",
         },
         {
           title: 'We surface intent shifts',
-          description: 'When a query starts gaining traction — or when a new buyer signal emerges — our system flags it. The content strategy adapts before the window closes.',
+          description: 'When a query starts gaining traction, or when a new buyer signal emerges, our system flags it. The content strategy adapts before the window closes.',
         },
         {
           title: 'Intent drives the cluster',
-          description: 'Every blog post in the cluster is directly tied to a real buyer intent signal. No filler content, no generic posts — only topics buyers are actively searching.',
+          description: 'Every blog post in the cluster is directly tied to a real buyer intent signal. No filler content, no generic posts, only topics buyers are actively searching.',
         },
       ]}
       whatYouGet={[
         'Weekly buyer intent scraping (niche + location + service)',
-        'Intent shift detection — rising, stable, and new signals',
+        'Intent shift detection, rising, stable, and new signals',
         'Query clustering by intent type (commercial, local, informational)',
         'Direct feed into the blog cluster content strategy',
         'Monthly intent shift summary in client reports',

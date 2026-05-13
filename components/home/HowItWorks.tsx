@@ -4,7 +4,7 @@ const STEPS = [
   {
     number: '01',
     title: 'White-label in 5 minutes',
-    description: 'Set up your branded AI visibility portal. Your logo, your colors, your domain. Clients see your platform — Rankett never appears.',
+    description: 'Set up your branded AI visibility portal. Your logo, your colors, your domain. Clients see your platform, Rankett never appears.',
   },
   {
     number: '02',
@@ -14,7 +14,7 @@ const STEPS = [
   {
     number: '03',
     title: 'We handle fulfillment',
-    description: 'Schema markup, AI-optimized blog posts, FAQ content, LLMs.txt, authority placements — Rankett builds and deploys everything. You close the deal; we do the work.',
+    description: 'Schema markup, AI-optimized blog posts, FAQ content, LLMs.txt, authority placements, Rankett builds and deploys everything. You close the deal; we do the work.',
   },
 ]
 

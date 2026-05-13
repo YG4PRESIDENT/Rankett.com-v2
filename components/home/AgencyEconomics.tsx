@@ -5,7 +5,7 @@ const BULLETS = [
   'Agencies markup Rankett 2–5× on average',
   'No fulfillment hiring required',
   'No new SOP burden on your team',
-  'White-label delivery — your brand, your invoice',
+  'White-label delivery, your brand, your invoice',
   'Flat operational workflow month over month',
 ]
 
@@ -42,7 +42,7 @@ export default function AgencyEconomics() {
             </ul>
           </FadeIn>
 
-          {/* Right — markup examples */}
+          {/* Right, markup examples */}
           <FadeIn direction="up" delay={0.12}>
             <div className="lg:pt-10 space-y-4">
               <div

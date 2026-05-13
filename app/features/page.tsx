@@ -7,8 +7,8 @@ import FadeIn from '@/components/scroll/FadeIn'
 import GradientCTA from '@/components/home/GradientCTA'
 
 export const metadata: Metadata = {
-  title: 'Features — Rankett Advanced Search Coverage',
-  description: 'Buyer intent blog clusters, market tracking, monthly reports, content creation — everything your clients need for advanced SEO and AI search coverage.',
+  title: 'Features, Rankett Advanced Search Coverage',
+  description: 'Buyer intent blog clusters, market tracking, monthly reports, content creation, everything your clients need for advanced SEO and AI search coverage.',
   alternates: { canonical: 'https://rankett.com/features/' },
 }
 
@@ -30,28 +30,28 @@ const FEATURES = [
   {
     icon: FileText,
     name: 'Monthly Reports',
-    description: 'Prompt/search coverage, buyer intent shifts, and a progress report — white-labeled and ready to send.',
+    description: 'Prompt/search coverage, buyer intent shifts, and a progress report, white-labeled and ready to send.',
     href: '/features/monthly-reports/',
     tag: 'Reporting',
   },
   {
     icon: Pen,
     name: 'Content Creation',
-    description: 'Page freshness, compounding internal linking, and baked-in blog schema — built to compound month over month.',
+    description: 'Page freshness, compounding internal linking, and baked-in blog schema, built to compound month over month.',
     href: '/features/content-creation/',
     tag: 'Content',
   },
   {
     icon: Globe,
     name: 'White-Label Portal',
-    description: 'Your brand, your domain. Clients see a fully branded AI visibility dashboard — Rankett never appears.',
+    description: 'Your brand, your domain. Clients see a fully branded AI visibility dashboard, Rankett never appears.',
     href: '/features/white-label-portal/',
     tag: 'Platform',
   },
   {
     icon: CheckCircle,
     name: 'Done-For-You Fulfillment',
-    description: 'Schema, FAQ, LLMs.txt, authority placements — all built and deployed by Rankett without touching your team.',
+    description: 'Schema, FAQ, LLMs.txt, authority placements, all built and deployed by Rankett without touching your team.',
     href: '/features/done-for-you-fulfillment/',
     tag: 'Fulfillment',
   },
@@ -79,7 +79,7 @@ export default function FeaturesPage() {
                 Advanced search coverage for your agency clients.
               </h1>
               <p className="text-[#6B6B6B] text-lg max-w-xl">
-                Buyer intent-driven content, ongoing market tracking, white-label reporting, and done-for-you fulfillment — all under your brand.
+                Buyer intent-driven content, ongoing market tracking, white-label reporting, and done-for-you fulfillment, all under your brand.
               </p>
             </FadeIn>
           </div>

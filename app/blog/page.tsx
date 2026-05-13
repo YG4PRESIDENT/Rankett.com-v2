@@ -7,7 +7,7 @@ import { blogPosts } from '@/lib/blogPosts'
 import { ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Blog — Rankett AI Search Insights',
+  title: 'Blog, Rankett AI Search Insights',
   description: 'Practical guides on AI search visibility, AI Mention Rate, LLMs.txt, schema markup, and how agencies can grow with AI SEO.',
   alternates: { canonical: 'https://rankett.com/blog/' },
 }

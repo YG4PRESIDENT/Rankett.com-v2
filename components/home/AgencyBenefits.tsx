@@ -5,27 +5,27 @@ const BENEFITS = [
   {
     icon: Plug,
     title: 'Seamless Plugin',
-    description: 'Install once, connect to any client website — WordPress, custom, or anything else. Zero ongoing credential management. Content deploys automatically.',
+    description: 'Install once, connect to any client website, WordPress, custom, or anything else. Zero ongoing credential management. Content deploys automatically.',
   },
   {
     icon: UserCheck,
     title: 'Dedicated Success Manager',
-    description: 'Every agency partner gets a dedicated point of contact. Onboarding, fulfillment questions, escalations — one person, always responsive.',
+    description: 'Every agency partner gets a dedicated point of contact. Onboarding, fulfillment questions, escalations, one person, always responsive.',
   },
   {
     icon: Package,
     title: 'White-Label Fulfillment',
-    description: 'Every deliverable ships under your brand. Clients never see Rankett. Your agency gets the credit — we handle the execution.',
+    description: 'Every deliverable ships under your brand. Clients never see Rankett. Your agency gets the credit, we handle the execution.',
   },
   {
     icon: FileText,
     title: 'White-Label Reporting',
-    description: 'Monthly progress reports in your agency branding. Coverage metrics, intent shifts, and deliverables completed — ready to forward to your client.',
+    description: 'Monthly progress reports in your agency branding. Coverage metrics, intent shifts, and deliverables completed, ready to forward to your client.',
   },
   {
     icon: LayoutDashboard,
     title: 'Dashboard Access',
-    description: 'Track client coverage, deployment status, and fulfillment progress. Support infrastructure for your team — not another thing to manage.',
+    description: 'Track client coverage, deployment status, and fulfillment progress. Support infrastructure for your team, not another thing to manage.',
   },
 ]
 
@@ -43,7 +43,7 @@ export default function AgencyBenefits() {
               Built to plug straight into your agency.
             </h2>
             <p className="mt-4 text-[#6B6B6B] leading-relaxed">
-              Rankett isn&apos;t another vendor your team has to manage. It&apos;s a fulfillment layer that runs behind the scenes — under your brand, inside your workflow, on your timeline.
+              Rankett isn&apos;t another vendor your team has to manage. It&apos;s a fulfillment layer that runs behind the scenes, under your brand, inside your workflow, on your timeline.
             </p>
             <ul className="mt-6 space-y-2.5">
               {[
@@ -59,7 +59,7 @@ export default function AgencyBenefits() {
             </ul>
           </FadeIn>
 
-          {/* Right — 5 benefit cards, 2-col grid, Dashboard spans full width */}
+          {/* Right, 5 benefit cards, 2-col grid, Dashboard spans full width */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {BENEFITS.map((b, i) => {
               const Icon = b.icon

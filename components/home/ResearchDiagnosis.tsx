@@ -27,7 +27,7 @@ export default function ResearchDiagnosis() {
               <ul className="space-y-2.5">
                 {[
                   'AI Mention Rate across ChatGPT, Gemini, Perplexity',
-                  'Competitor gap analysis — who\'s beating them and why',
+                  'Competitor gap analysis, who\'s beating them and why',
                   'Technical SEO signals (schema, LLMs.txt, authority)',
                   'Exportable report, white-labeled in your brand',
                 ].map((item) => (

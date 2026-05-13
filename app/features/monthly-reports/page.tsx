@@ -3,8 +3,8 @@ import { FileText } from 'lucide-react'
 import FeaturePageTemplate from '@/components/features/FeaturePageTemplate'
 
 export const metadata: Metadata = {
-  title: 'Monthly Reports — Rankett',
-  description: 'White-labeled monthly reports covering prompt/search coverage, buyer intent shifts, and progress — delivered under your brand.',
+  title: 'Monthly Reports, Rankett',
+  description: 'White-labeled monthly reports covering prompt/search coverage, buyer intent shifts, and progress, delivered under your brand.',
   alternates: { canonical: 'https://rankett.com/features/monthly-reports/' },
 }
 
@@ -33,8 +33,8 @@ const mockup = (
     <div className="space-y-1.5">
       <p className="text-[10px] font-semibold text-[#6B6B6B] uppercase tracking-wider">Buyer Intent Shifts Detected</p>
       {[
-        '"water heater cost austin" — volume +34% MoM',
-        '"emergency plumber open sunday" — new signal',
+        '"water heater cost austin", volume +34% MoM',
+        '"emergency plumber open sunday", new signal',
       ].map((shift) => (
         <div key={shift} className="flex items-center gap-2 text-[10px] text-[#6B6B6B]">
           <span className="w-1.5 h-1.5 rounded-full bg-[#F59E0B] flex-shrink-0" />
@@ -55,11 +55,11 @@ export default function MonthlyReportsPage() {
       steps={[
         {
           title: 'Prompt & search coverage',
-          description: 'We track how many relevant AI and search prompts your client now appears in — and show the month-over-month growth. Real numbers, not estimates.',
+          description: 'We track how many relevant AI and search prompts your client now appears in, and show the month-over-month growth. Real numbers, not estimates.',
         },
         {
           title: 'Buyer intent shifts',
-          description: 'Markets change. Our ongoing buyer intent scraping catches when new queries start gaining traction — and the report flags these shifts so the strategy can adapt.',
+          description: 'Markets change. Our ongoing buyer intent scraping catches when new queries start gaining traction, and the report flags these shifts so the strategy can adapt.',
         },
         {
           title: 'Progress report',

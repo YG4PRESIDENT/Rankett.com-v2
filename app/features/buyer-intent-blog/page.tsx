@@ -3,18 +3,18 @@ import { BarChart2 } from 'lucide-react'
 import FeaturePageTemplate from '@/components/features/FeaturePageTemplate'
 
 export const metadata: Metadata = {
-  title: 'Buyer Intent Blog Cluster — Rankett',
+  title: 'Buyer Intent Blog Cluster, Rankett',
   description: 'Compounding search coverage targeted toward real buyer intent across your niche, services, and location.',
   alternates: { canonical: 'https://rankett.com/features/buyer-intent-blog/' },
 }
 
 const mockup = (
   <div className="space-y-4">
-    <p className="text-xs font-semibold uppercase tracking-wider text-[#6B6B6B]">Blog Cluster — Acme Plumbing</p>
+    <p className="text-xs font-semibold uppercase tracking-wider text-[#6B6B6B]">Blog Cluster, Acme Plumbing</p>
     <div className="space-y-2">
       {[
         { title: 'Best Plumber in Austin for Water Heater Replacement', status: 'Live', intent: 'Commercial' },
-        { title: 'Emergency Plumbing Service Near Me — Austin TX', status: 'Live', intent: 'Local' },
+        { title: 'Emergency Plumbing Service Near Me, Austin TX', status: 'Live', intent: 'Local' },
         { title: 'How Much Does a Water Heater Installation Cost in Austin?', status: 'Scheduled', intent: 'Buyer' },
         { title: 'Licensed Plumber vs. Handyman: What\'s the Difference?', status: 'In Progress', intent: 'Informational' },
       ].map((post) => (
@@ -40,7 +40,7 @@ export default function BuyerIntentBlogPage() {
     <FeaturePageTemplate
       eyebrow="Content"
       title="Compounding search coverage built around real buyer intent."
-      description="Most blog content targets the wrong keywords. Rankett scrapes real buyer intent signals across your client's niche, services, and location — then builds a blog cluster designed to compound search coverage month over month."
+      description="Most blog content targets the wrong keywords. Rankett scrapes real buyer intent signals across your client's niche, services, and location, then builds a blog cluster designed to compound search coverage month over month."
       Icon={BarChart2}
       steps={[
         {
@@ -49,7 +49,7 @@ export default function BuyerIntentBlogPage() {
         },
         {
           title: 'We build the cluster strategy',
-          description: "Posts aren't random. Each one targets a specific buyer intent signal — commercial, local, transactional — and links back to related posts to compound authority over time.",
+          description: "Posts aren't random. Each one targets a specific buyer intent signal, commercial, local, transactional, and links back to related posts to compound authority over time.",
         },
         {
           title: 'We write, optimize, and deploy',

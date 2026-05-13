@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = getPostBySlug(slug)
   if (!post) return { title: 'Not Found' }
   return {
-    title: `${post.title} — Rankett Blog`,
+    title: `${post.title}, Rankett Blog`,
     description: post.excerpt,
     alternates: { canonical: `https://rankett.com/blog/${slug}/` },
   }
@@ -81,7 +81,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               {post.excerpt}
             </p>
 
-            {/* Body — render markdown-ish sections */}
+            {/* Body, render markdown-ish sections */}
             {post.body ? (
               <div className="prose-rankett space-y-5">
                 {bodyLines.map((line, i) => {

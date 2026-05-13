@@ -3,8 +3,8 @@ import { Pen } from 'lucide-react'
 import FeaturePageTemplate from '@/components/features/FeaturePageTemplate'
 
 export const metadata: Metadata = {
-  title: 'Content Creation — Rankett',
-  description: 'Page freshness, compounding internal linking, and baked-in blog schema — every piece of content built to compound.',
+  title: 'Content Creation, Rankett',
+  description: 'Page freshness, compounding internal linking, and baked-in blog schema, every piece of content built to compound.',
   alternates: { canonical: 'https://rankett.com/features/content-creation/' },
 }
 
@@ -13,7 +13,7 @@ const mockup = (
     <p className="text-xs font-semibold uppercase tracking-wider text-[#6B6B6B]">Content Quality Signals</p>
     <div className="space-y-2">
       {[
-        { label: 'Page Freshness', detail: 'Updated monthly — signals recency to search & AI', ok: true },
+        { label: 'Page Freshness', detail: 'Updated monthly, signals recency to search & AI', ok: true },
         { label: 'Internal Linking', detail: '3–5 contextual links per post, compounding DA', ok: true },
         { label: 'Blog Schema (Article)', detail: 'Structured data baked into every post', ok: true },
         { label: 'FAQ Schema', detail: 'Expandable Q&A baked into relevant posts', ok: true },
@@ -38,12 +38,12 @@ export default function ContentCreationPage() {
     <FeaturePageTemplate
       eyebrow="Content"
       title="Content built to compound, not just fill a calendar."
-      description="Every piece of content Rankett creates is engineered for compounding coverage — page freshness signals, internal link equity, and baked-in schema that makes it readable by both search engines and AI models."
+      description="Every piece of content Rankett creates is engineered for compounding coverage, page freshness signals, internal link equity, and baked-in schema that makes it readable by both search engines and AI models."
       Icon={Pen}
       steps={[
         {
           title: 'Page freshness',
-          description: 'Content is refreshed monthly — new data, updated stats, expanded sections. Search engines and AI models both weight recency. Stale content loses ground; fresh content builds it.',
+          description: 'Content is refreshed monthly, new data, updated stats, expanded sections. Search engines and AI models both weight recency. Stale content loses ground; fresh content builds it.',
         },
         {
           title: 'Compounding internal linking',
@@ -51,7 +51,7 @@ export default function ContentCreationPage() {
         },
         {
           title: 'Baked-in blog schema',
-          description: 'Article schema, FAQ schema, and relevant structured data are embedded in every post. AI models parse structured data — this is a direct input into citation likelihood.',
+          description: 'Article schema, FAQ schema, and relevant structured data are embedded in every post. AI models parse structured data, this is a direct input into citation likelihood.',
         },
       ]}
       whatYouGet={[

@@ -3,8 +3,8 @@ import { Globe } from 'lucide-react'
 import FeaturePageTemplate from '@/components/features/FeaturePageTemplate'
 
 export const metadata: Metadata = {
-  title: 'White-Label Portal — Rankett',
-  description: 'Fully branded AI visibility dashboard for your clients. Your logo, your domain, your colors — Rankett never appears.',
+  title: 'White-Label Portal, Rankett',
+  description: 'Fully branded AI visibility dashboard for your clients. Your logo, your domain, your colors, Rankett never appears.',
   alternates: { canonical: 'https://rankett.com/features/white-label-portal/' },
 }
 
@@ -46,7 +46,7 @@ export default function WhiteLabelPortalPage() {
     <FeaturePageTemplate
       eyebrow="Branding"
       title="100% white-labeled. Your brand, start to finish."
-      description="Your clients never see Rankett. They see your agency's name, your logo, your custom domain — a fully branded AI visibility dashboard that looks like you built it. Because as far as they're concerned, you did."
+      description="Your clients never see Rankett. They see your agency's name, your logo, your custom domain, a fully branded AI visibility dashboard that looks like you built it. Because as far as they're concerned, you did."
       Icon={Globe}
       steps={[
         {
@@ -55,7 +55,7 @@ export default function WhiteLabelPortalPage() {
         },
         {
           title: 'Clients log into your portal',
-          description: 'Every client gets a login to their own branded dashboard. They see their AI visibility score, progress, and reports — all under your brand.',
+          description: 'Every client gets a login to their own branded dashboard. They see their AI visibility score, progress, and reports, all under your brand.',
         },
         {
           title: 'We update it automatically',

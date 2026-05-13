@@ -15,7 +15,7 @@ export default function OperationalPain() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-          {/* Left — pain */}
+          {/* Left, pain */}
           <FadeIn direction="up">
             <p className="text-xs font-semibold uppercase tracking-wider text-[#6B6B6B] mb-4">The Operational Problem</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#111110] leading-tight mb-8">
@@ -31,7 +31,7 @@ export default function OperationalPain() {
             </ul>
           </FadeIn>
 
-          {/* Right — resolution */}
+          {/* Right, resolution */}
           <FadeIn direction="up" delay={0.12}>
             <div className="lg:pt-12">
               <div className="p-8 rounded-2xl border border-[#E5E5E3] bg-white">
@@ -40,7 +40,7 @@ export default function OperationalPain() {
                   Rankett plugs into your existing SEO retainers as a backend authority layer.
                 </p>
                 <p className="text-[#6B6B6B] text-sm leading-relaxed">
-                  Your team handles rankings. Rankett handles the implementation depth your clients need — but your team doesn&apos;t have time for. Invisible to everyone except your bottom line.
+                  Your team handles rankings. Rankett handles the implementation depth your clients need, but your team doesn&apos;t have time for. Invisible to everyone except your bottom line.
                 </p>
                 <div className="mt-6 pt-6 border-t border-[#E5E5E3] flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-[#4F7CFF] flex-shrink-0" />

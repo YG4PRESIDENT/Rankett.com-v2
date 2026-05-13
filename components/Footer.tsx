@@ -13,7 +13,7 @@ const NAV_LINKS = [
 export default function Footer() {
   return (
     <footer className="bg-[#0a0f30] relative mt-auto">
-      {/* Gradient bridge — eases from page gradient into dark footer */}
+      {/* Gradient bridge, eases from page gradient into dark footer */}
       <div
         className="absolute pointer-events-none"
         style={{
@@ -69,7 +69,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Ghost brand text — dot matrix via background-clip */}
+      {/* Ghost brand text, dot matrix via background-clip */}
       <div
         className="relative z-10 flex items-center justify-center overflow-hidden rounded-b-xl"
         style={{ height: 'clamp(120px, 18vw, 260px)' }}

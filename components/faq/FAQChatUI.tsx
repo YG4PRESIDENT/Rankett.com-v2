@@ -11,7 +11,7 @@ const FAQ_CATEGORIES = [
     faqs: [
       {
         question: 'What is Rankett?',
-        answer: "Rankett is a white-label, done-for-you SEO fulfillment partner for digital marketing agencies. We handle the advanced SEO implementation your team doesn't have bandwidth for — buyer-intent blog clustering, market intent tracking, schema implementation, internal link reinforcement, and page freshness — all deployed under your agency's brand. Your clients see your agency. Rankett stays invisible.",
+        answer: "Rankett is a white-label, done-for-you SEO fulfillment partner for digital marketing agencies. We handle the advanced SEO implementation your team doesn't have bandwidth for, buyer-intent blog clustering, market intent tracking, schema implementation, internal link reinforcement, and page freshness, all deployed under your agency's brand. Your clients see your agency. Rankett stays invisible.",
       },
       {
         question: 'Is Rankett an AI SEO tool or a managed service?',
@@ -19,7 +19,7 @@ const FAQ_CATEGORIES = [
       },
       {
         question: 'How is Rankett different from traditional white-label SEO platforms?',
-        answer: "Most white-label SEO platforms hand you a dashboard and expect your team to manage it. Rankett is pure fulfillment — we research, write, optimize, and deploy everything on your behalf. There's no tool for you to log into and run. You hand us a client, we handle the advanced implementation layer, and deliverables arrive under your brand every month.",
+        answer: "Most white-label SEO platforms hand you a dashboard and expect your team to manage it. Rankett is pure fulfillment, we research, write, optimize, and deploy everything on your behalf. There's no tool for you to log into and run. You hand us a client, we handle the advanced implementation layer, and deliverables arrive under your brand every month.",
       },
     ],
   },
@@ -32,7 +32,7 @@ const FAQ_CATEGORIES = [
       },
       {
         question: 'Is this just AI-generated content?',
-        answer: "No. Every piece Rankett creates is informed by real buyer-intent research specific to your client's niche, location, and service lines — not a generic AI prompt. All content goes through an internal quality scoring process and human review before deployment. Topics are mapped to real queries buyers are actively using. We don't ship content we wouldn't be proud to put our name on.",
+        answer: "No. Every piece Rankett creates is informed by real buyer-intent research specific to your client's niche, location, and service lines, not a generic AI prompt. All content goes through an internal quality scoring process and human review before deployment. Topics are mapped to real queries buyers are actively using. We don't ship content we wouldn't be proud to put our name on.",
       },
       {
         question: 'What types of businesses does Rankett work best for?',
@@ -49,7 +49,7 @@ const FAQ_CATEGORIES = [
     faqs: [
       {
         question: 'How long until my clients see real results?',
-        answer: "Month 1 covers the technical layer — plugin setup, schema implementation, and buyer-intent research. Month 2 gets the first buyer-intent blog cluster live on your client's site. Month 3 onward, coverage compounds as content indexes, internal links accumulate authority, and AI platforms begin citing the growing body of relevant content. Meaningful search coverage lift typically shows by the 90-day mark.",
+        answer: "Month 1 covers the technical layer, plugin setup, schema implementation, and buyer-intent research. Month 2 gets the first buyer-intent blog cluster live on your client's site. Month 3 onward, coverage compounds as content indexes, internal links accumulate authority, and AI platforms begin citing the growing body of relevant content. Meaningful search coverage lift typically shows by the 90-day mark.",
       },
       {
         question: 'How is this different from just buying blog posts?',
@@ -62,15 +62,15 @@ const FAQ_CATEGORIES = [
     faqs: [
       {
         question: 'How much does Rankett cost and how should I mark it up?',
-        answer: 'Rankett charges agencies $498/month (Local), $998/month (Regional), or $1,498/month (National) depending on client scope. Agencies typically mark up 2–5× when reselling — meaning a $498/month service commonly becomes a $1,000–$1,500/month retainer add-on for the client. No long-term contract is required to start.',
+        answer: 'Rankett charges agencies $498/month (Local), $998/month (Regional), or $1,498/month (National) depending on client scope. Agencies typically mark up 2–5× when reselling, meaning a $498/month service commonly becomes a $1,000–$1,500/month retainer add-on for the client. No long-term contract is required to start.',
       },
       {
         question: 'Is there a long-term contract?',
-        answer: "No. There's no long-term contract required to get started. You can scale up, scale down, or cancel on a monthly basis. Most agencies keep clients on Rankett long-term because the compounding nature of the service makes results improve over time — not because they're locked in.",
+        answer: "No. There's no long-term contract required to get started. You can scale up, scale down, or cancel on a monthly basis. Most agencies keep clients on Rankett long-term because the compounding nature of the service makes results improve over time, not because they're locked in.",
       },
       {
         question: "What's the guarantee if a deliverable is late?",
-        answer: "Full month refund — no questions asked — if we're even one minute late on any deliverable. Agencies also have final approval and rejection rights on every piece of content before it goes live on a client site. If it's not right, we fix it or you don't pay.",
+        answer: "Full month refund, no questions asked, if we're even one minute late on any deliverable. Agencies also have final approval and rejection rights on every piece of content before it goes live on a client site. If it's not right, we fix it or you don't pay.",
       },
     ],
   },
@@ -79,11 +79,11 @@ const FAQ_CATEGORIES = [
     faqs: [
       {
         question: 'How long does setup take?',
-        answer: "White-label branding setup — logo, colors, and domain — takes about 5 minutes. The WordPress plugin installs on your client's site in one click. We include an onboarding call where Rankett configures everything. Your first deliverables are live within 30 days of signing.",
+        answer: "White-label branding setup, logo, colors, and domain, takes about 5 minutes. The WordPress plugin installs on your client's site in one click. We include an onboarding call where Rankett configures everything. Your first deliverables are live within 30 days of signing.",
       },
       {
         question: 'Does Rankett work for non-WordPress sites?',
-        answer: "Currently, Rankett's automated deployment runs via a WordPress plugin, so the primary path is for WordPress-based client sites. If you have enterprise or custom-CMS clients, reach out directly — we handle non-standard setups on a case-by-case basis.",
+        answer: "Currently, Rankett's automated deployment runs via a WordPress plugin, so the primary path is for WordPress-based client sites. If you have enterprise or custom-CMS clients, reach out directly, we handle non-standard setups on a case-by-case basis.",
       },
     ],
   },
@@ -92,11 +92,11 @@ const FAQ_CATEGORIES = [
     faqs: [
       {
         question: 'My agency already does SEO. Will Rankett conflict with what we do?',
-        answer: "No — Rankett is designed to layer under what your team already delivers. Your agency handles the core ranking work: technical audits, backlinks, on-page optimization. Rankett handles the implementation depth layer: continuous buyer-intent content, schema, page freshness, and internal authority reinforcement. It adds to your offering without replacing it.",
+        answer: "No, Rankett is designed to layer under what your team already delivers. Your agency handles the core ranking work: technical audits, backlinks, on-page optimization. Rankett handles the implementation depth layer: continuous buyer-intent content, schema, page freshness, and internal authority reinforcement. It adds to your offering without replacing it.",
       },
       {
         question: 'How is Rankett different from hiring a freelancer or in-house SEO?',
-        answer: "A freelancer or in-house hire covers one dimension — usually writing or auditing. Rankett covers the full advanced SEO stack: research, writing, schema, internal linking, freshness, reporting, and fulfillment tracking — across every client, every month. No management overhead, no hiring ramp, no sick days. At $498–$1,498/month per client, it delivers more scope than a single in-house hire at a fraction of the cost.",
+        answer: "A freelancer or in-house hire covers one dimension, usually writing or auditing. Rankett covers the full advanced SEO stack: research, writing, schema, internal linking, freshness, reporting, and fulfillment tracking, across every client, every month. No management overhead, no hiring ramp, no sick days. At $498–$1,498/month per client, it delivers more scope than a single in-house hire at a fraction of the cost.",
       },
       {
         question: 'How is Rankett different from DashClicks or SEOReseller?',
@@ -104,7 +104,7 @@ const FAQ_CATEGORIES = [
       },
       {
         question: 'How do I pitch this to my client?',
-        answer: "Position it as advanced search coverage — the content and technical layer that ensures your client shows up across more queries, including AI search platforms like ChatGPT and Perplexity. Most agencies present it as a premium SEO retainer add-on. The white-labeled monthly progress reports make it easy to demonstrate ROI to clients each month.",
+        answer: "Position it as advanced search coverage, the content and technical layer that ensures your client shows up across more queries, including AI search platforms like ChatGPT and Perplexity. Most agencies present it as a premium SEO retainer add-on. The white-labeled monthly progress reports make it easy to demonstrate ROI to clients each month.",
       },
     ],
   },
@@ -177,7 +177,7 @@ export default function FAQChatUI() {
 
                 return (
                   <div key={key}>
-                    {/* Question bubble — right-aligned with cascade offset */}
+                    {/* Question bubble, right-aligned with cascade offset */}
                     <div className="flex justify-end" style={{ paddingRight: offset }}>
                       <button
                         onClick={() => toggle(key)}
@@ -192,7 +192,7 @@ export default function FAQChatUI() {
                       </button>
                     </div>
 
-                    {/* Answer — smooth AnimatePresence */}
+                    {/* Answer, smooth AnimatePresence */}
                     <AnimatePresence>
                       {isOpen && (
                         <motion.div

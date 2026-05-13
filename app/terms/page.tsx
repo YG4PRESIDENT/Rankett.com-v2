@@ -3,7 +3,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service — Rankett',
+  title: 'Terms of Service, Rankett',
   alternates: { canonical: 'https://rankett.com/terms/' },
 }
 
