@@ -24,6 +24,7 @@ export default function Footer() {
               width={40}
               height={40}
               className="h-10 w-10"
+              style={{ animation: 'spin-slow 14s linear infinite' }}
             />
           </Link>
 
