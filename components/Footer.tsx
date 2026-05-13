@@ -19,11 +19,11 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
           <Link href="/" className="flex-shrink-0">
             <Image
-              src="/images/Rankett_Logo.png"
+              src="/apple-touch-icon.png"
               alt="Rankett"
-              width={110}
-              height={32}
-              className="h-8 w-auto brightness-0 invert"
+              width={40}
+              height={40}
+              className="h-10 w-10"
             />
           </Link>
 
