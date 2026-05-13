@@ -39,17 +39,14 @@
 
 html {
   overflow-x: hidden;
-  /* Matches footer — bottom overscroll continues the dark instead of flashing white */
-  background-color: #0a0f30;
+  background-color: #dce2f0;
 }
 
 body {
   overflow-x: hidden;
-  /* Constrain content to 1152px — matches nav pill and section max-widths */
   max-width: 1152px;
   margin-left: auto;
   margin-right: auto;
-  /* Matches gradient base — top overscroll blends into the hero gradient */
   background-color: #F0F4FF;
   color: var(--color-text);
   font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, sans-serif;

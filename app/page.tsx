@@ -7,6 +7,7 @@ import TheMechanism from '@/components/home/TheMechanism'
 import CompoundingAngle from '@/components/home/CompoundingAngle'
 import AgencyEconomics from '@/components/home/AgencyEconomics'
 import AgencyBenefits from '@/components/home/AgencyBenefits'
+import FAQSection from '@/components/home/FAQSection'
 import GradientCTA from '@/components/home/GradientCTA'
 
 export const metadata: Metadata = {
@@ -75,6 +76,7 @@ export default function Home() {
         <CompoundingAngle />
         <AgencyEconomics />
         <AgencyBenefits />
+        <FAQSection />
         <GradientCTA />
       </main>
       <Footer />
