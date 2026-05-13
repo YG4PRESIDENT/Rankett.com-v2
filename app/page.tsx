@@ -4,6 +4,7 @@ import Footer from '@/components/Footer'
 import HeroV2 from '@/components/home/HeroV2'
 import OperationalPain from '@/components/home/OperationalPain'
 import TheMechanism from '@/components/home/TheMechanism'
+import AgencyAdvantages from '@/components/home/AgencyAdvantages'
 import CompoundingAngle from '@/components/home/CompoundingAngle'
 import AgencyEconomics from '@/components/home/AgencyEconomics'
 import AgencyBenefits from '@/components/home/AgencyBenefits'
@@ -66,6 +67,7 @@ export default function Home() {
       <main className="relative">
         <HeroV2 />
         <OperationalPain />
+        <AgencyAdvantages />
         <TheMechanism />
         <CompoundingAngle />
         <AgencyEconomics />

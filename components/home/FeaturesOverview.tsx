@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { BarChart2, FileText, Search, Pen, Globe, CheckCircle, ArrowRight } from 'lucide-react'
+import { BarChart2, FileText, Search, Pen, ArrowRight } from 'lucide-react'
 import FadeIn from '@/components/scroll/FadeIn'
 
 const FEATURES = [
@@ -11,13 +11,6 @@ const FEATURES = [
     tag: 'Content',
   },
   {
-    icon: Search,
-    name: 'Market Buyer Intent Tracking',
-    description: 'We scrape buyer intent signals across your niche and location on an ongoing basis to fuel the blog cluster strategy.',
-    href: '/features/market-buyer-intent/',
-    tag: 'Research',
-  },
-  {
     icon: FileText,
     name: 'Monthly Reports',
     description: 'Prompt/search coverage, buyer intent shifts, and a progress report — white-labeled and delivered to your clients.',
@@ -25,25 +18,18 @@ const FEATURES = [
     tag: 'Reporting',
   },
   {
+    icon: Search,
+    name: 'Market Buyer Intent Tracking',
+    description: 'We scrape buyer intent across your niche and location on an ongoing basis to fuel the blog cluster strategy.',
+    href: '/features/market-buyer-intent/',
+    tag: 'Research',
+  },
+  {
     icon: Pen,
     name: 'Content Creation',
     description: 'Page freshness, compounding internal linking, and baked-in blog schema — every piece of content built to compound.',
     href: '/features/content-creation/',
     tag: 'Content',
-  },
-  {
-    icon: Globe,
-    name: 'White-Label Portal',
-    description: 'Your brand, your domain. Clients see a fully branded visibility dashboard — Rankett never appears.',
-    href: '/features/white-label-portal/',
-    tag: 'Platform',
-  },
-  {
-    icon: CheckCircle,
-    name: 'Done-For-You Fulfillment',
-    description: 'Schema markup, LLMs.txt, FAQ optimization, authority placements — all built and deployed by Rankett.',
-    href: '/features/done-for-you-fulfillment/',
-    tag: 'Fulfillment',
   },
 ]
 
@@ -53,14 +39,14 @@ export default function FeaturesOverview() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn direction="up">
           <div className="mb-12">
-            <p className="text-xs font-semibold uppercase tracking-wider text-[#6B6B6B] mb-2">Platform</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-[#6B6B6B] mb-2">Client Deliverables</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#111110]">
-              Everything your clients need<br className="hidden sm:block" /> for advanced search coverage.
+              The four deliverables your clients get every month.
             </h2>
           </div>
         </FadeIn>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {FEATURES.map((feature, i) => {
             const Icon = feature.icon
             return (

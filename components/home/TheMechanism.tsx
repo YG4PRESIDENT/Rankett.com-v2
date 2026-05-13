@@ -5,37 +5,37 @@ const MECHANISMS = [
   {
     icon: BarChart2,
     name: 'Buyer-Intent Blog Clustering',
-    description: "Blog posts mapped to real buyer queries in your client's niche, services, and location.",
+    description: 'Real buyer queries across Google, AI platforms, and niche forums mapped to blog post targets each month.',
   },
   {
     icon: Search,
     name: 'Market Intent Tracking',
-    description: 'Ongoing scraping of buyer intent signals across Google, AI platforms, and niche forums — updated weekly.',
+    description: 'Weekly scraping of buyer intent signals — Google, ChatGPT, Perplexity, niche forums. Updated every 7 days.',
   },
   {
     icon: Pen,
     name: 'Content Creation',
-    description: 'Written, schema-optimized, and deployed directly to client sites each month.',
+    description: "Every post written to spec, schema'd, internally linked, and deployed directly to the client's site.",
   },
   {
     icon: Link2,
     name: 'Internal Link Reinforcement',
-    description: 'Compounding internal links across every post to build topical authority over time.',
+    description: 'Every new post links back to existing content — compounding topical authority with each publish.',
   },
   {
     icon: Code2,
     name: 'Schema Implementation',
-    description: 'Article, FAQ, and structured data baked into every piece of content automatically.',
+    description: 'Article, FAQ, and entity schema baked into every deployment automatically.',
   },
   {
     icon: RefreshCw,
     name: 'Page Freshness Reinforcement',
-    description: 'Monthly updates to existing content — recency signals for both search and AI models.',
+    description: 'Existing content updated monthly — recency signals for Google and AI retrieval models.',
   },
   {
     icon: FileText,
     name: 'White-Label Reporting',
-    description: 'Progress reports under your brand, covering coverage metrics and deliverables completed.',
+    description: 'Coverage metrics, intent shifts, and deliverable progress — under your brand, sent to your clients.',
   },
 ]
 
@@ -48,10 +48,13 @@ export default function TheMechanism() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn direction="up">
           <div className="mb-12">
-            <p className="text-xs font-semibold uppercase tracking-wider text-[#6B6B6B] mb-3">The Mechanism</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-[#6B6B6B] mb-3">How It Works</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#111110] max-w-xl leading-tight">
-              What Rankett handles behind the scenes.
+              The operational layer your agency never has to think about.
             </h2>
+            <p className="mt-3 text-sm text-[#6B6B6B] max-w-xl leading-relaxed">
+              Every deliverable is built, optimized, and deployed by Rankett — without touching your team&apos;s bandwidth.
+            </p>
           </div>
         </FadeIn>
 

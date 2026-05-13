@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Menu, X, ArrowRight, ChevronDown, BarChart2, FileText, Search, Pen, Globe, CheckCircle, Phone } from 'lucide-react'
+import { Menu, X, ArrowRight, ChevronDown, BarChart2, FileText, Search, Pen, Phone } from 'lucide-react'
 
 const CALENDLY = 'https://calendly.com/rankett/30min'
 
@@ -11,38 +11,26 @@ const FEATURES = [
   {
     icon: BarChart2,
     name: 'Buyer Intent Blog Cluster',
-    description: 'Compounding search coverage targeting real buyer intent across your niche.',
+    description: 'Compounding search coverage targeted toward real buyer intent across your niche, services, and location.',
     href: '/features/buyer-intent-blog/',
   },
   {
     icon: FileText,
     name: 'Monthly Reports',
-    description: 'Prompt coverage, buyer intent shifts, and progress — white-labeled.',
+    description: 'Prompt/search coverage, buyer intent shifts, and a progress report — white-labeled and delivered to your clients.',
     href: '/features/monthly-reports/',
   },
   {
     icon: Search,
     name: 'Market Buyer Intent Tracking',
-    description: 'Ongoing scraping of buyer intent across your niche and location.',
+    description: 'We scrape buyer intent across your niche and location on an ongoing basis to fuel the blog cluster strategy.',
     href: '/features/market-buyer-intent/',
   },
   {
     icon: Pen,
     name: 'Content Creation',
-    description: 'Page freshness, compounding internal linking, and baked-in blog schema.',
+    description: 'Page freshness, compounding internal linking, and baked-in blog schema — every piece of content built to compound.',
     href: '/features/content-creation/',
-  },
-  {
-    icon: Globe,
-    name: 'White-Label Portal',
-    description: 'Your brand, your domain. Clients see your platform — Rankett is invisible.',
-    href: '/features/white-label-portal/',
-  },
-  {
-    icon: CheckCircle,
-    name: 'Done-For-You Fulfillment',
-    description: 'Schema, FAQ, LLMs.txt, authority placements — built and deployed.',
-    href: '/features/done-for-you-fulfillment/',
   },
 ]
 
