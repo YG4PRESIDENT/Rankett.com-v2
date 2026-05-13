@@ -1,72 +1,76 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { Phone } from 'lucide-react'
 
-const CALENDLY = 'https://calendly.com/rankett/30min'
-
-const LINKS = {
-  Platform: [
-    { label: 'Features', href: '/features/' },
-    { label: 'How It Works', href: '/#how-it-works' },
-    { label: 'Blog', href: '/blog/' },
-    { label: 'FAQ', href: '/faq/' },
-  ],
-  Company: [
-    { label: 'Book a Call', href: CALENDLY },
-    { label: 'Partner Login', href: 'https://app.rankett.com/sign-in' },
-    { label: 'Privacy Policy', href: '/privacy/' },
-    { label: 'Terms of Service', href: '/terms/' },
-  ],
-}
+const NAV_LINKS = [
+  { label: 'FAQ', href: '/faq/' },
+  { label: 'Blog', href: '/blog/' },
+  { label: 'Features', href: '/features/' },
+  { label: 'Privacy Policy', href: '/privacy/' },
+  { label: 'Terms of Service', href: '/terms/' },
+]
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[#E5E5E3] bg-white mt-auto">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
-          {/* Brand */}
-          <div className="md:col-span-2">
+    <footer className="bg-[#0D0D0C] relative overflow-hidden mt-auto">
+      {/* Top content */}
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-8">
+        {/* Logo + nav row */}
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
+          <Link href="/" className="flex-shrink-0">
             <Image
               src="/images/Rankett_Logo.png"
               alt="Rankett"
-              width={100}
-              height={28}
-              className="h-7 w-auto mb-3"
+              width={110}
+              height={32}
+              className="h-8 w-auto brightness-0 invert"
             />
-            <p className="text-sm text-[#6B6B6B] max-w-xs leading-relaxed">
-              The AI search layer for your agency. White-labeled, done-for-you fulfillment. Plug in and grow.
-            </p>
-          </div>
+          </Link>
 
-          {/* Links */}
-          {Object.entries(LINKS).map(([group, links]) => (
-            <div key={group}>
-              <p className="text-xs font-semibold uppercase tracking-wider text-[#6B6B6B] mb-3">
-                {group}
-              </p>
-              <ul className="space-y-2">
-                {links.map((link) => (
-                  <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      className="text-sm text-[#6B6B6B] hover:text-[#111110] transition-colors duration-150"
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          <nav className="flex flex-wrap items-center gap-5 sm:gap-7">
+            {NAV_LINKS.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-sm text-white/40 hover:text-white/70 transition-colors duration-150"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
         </div>
 
-        <div className="mt-12 pt-6 border-t border-[#E5E5E3] flex flex-col sm:flex-row items-center justify-between gap-2">
-          <p className="text-xs text-[#6B6B6B]">
+        {/* Copyright + phone */}
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mt-7 pt-6 border-t border-white/[0.06]">
+          <p className="text-xs text-white/30">
             © {new Date().getFullYear()} Rankett. All rights reserved.
           </p>
-          <p className="text-xs text-[#6B6B6B]">
-            info@rankett.com
-          </p>
+          <a
+            href="tel:+18578473152"
+            className="flex items-center gap-1.5 text-xs text-white/30 hover:text-white/55 transition-colors"
+          >
+            <Phone className="w-3 h-3" />
+            +1 857-847-3152
+          </a>
         </div>
+      </div>
+
+      {/* Ghost brand text — dot matrix via background-clip */}
+      <div
+        className="relative z-10 flex items-center justify-center overflow-hidden"
+        style={{ height: 'clamp(120px, 18vw, 260px)' }}
+      >
+        <span
+          className="font-bold bg-clip-text text-transparent leading-none tracking-tight select-none pointer-events-none"
+          style={{
+            fontSize: 'clamp(72px, 14vw, 210px)',
+            backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.20) 1.5px, transparent 1.5px)',
+            backgroundSize: '6px 6px',
+          }}
+          aria-hidden="true"
+        >
+          Rankett
+        </span>
       </div>
     </footer>
   )
