@@ -12,9 +12,30 @@ import FAQSection from '@/components/home/FAQSection'
 import GradientCTA from '@/components/home/GradientCTA'
 
 export const metadata: Metadata = {
-  title: 'Rankett, Advanced Search Coverage for Agencies | SEO + AI Search',
-  description: 'Add advanced search coverage to your agency\'s offering. Buyer intent blog clusters, market tracking, white-label reporting, done-for-you. Takes 5 minutes to start.',
+  title: 'Rankett | White-Label SEO for Agencies | Done-For-You Fulfillment',
+  description: 'Done-for-you SEO fulfillment. Buyer intent content, AI search visibility, white-labeled reports. Agencies scale without hiring.',
   alternates: { canonical: 'https://rankett.com' },
+  openGraph: {
+    title: 'Rankett | AI Visibility for Agencies',
+    description: 'The AI search layer for your agency. White-label, done-for-you fulfillment. Takes 5 minutes.',
+    url: 'https://rankett.com',
+    siteName: 'Rankett',
+    type: 'website',
+    images: [
+      {
+        url: 'https://rankett.com/og-image.svg',
+        width: 1200,
+        height: 630,
+        alt: 'Rankett — The AI Search Layer for Your Agency',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Rankett | AI Visibility for Agencies',
+    description: 'The AI search layer for your agency. White-label, done-for-you.',
+    images: ['https://rankett.com/og-image.svg'],
+  },
 }
 
 const faqSchema = {

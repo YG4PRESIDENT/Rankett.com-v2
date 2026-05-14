@@ -3,9 +3,23 @@ import { FileText } from 'lucide-react'
 import FeaturePageTemplate from '@/components/features/FeaturePageTemplate'
 
 export const metadata: Metadata = {
-  title: 'Monthly Reports, Rankett',
-  description: 'White-labeled monthly reports covering prompt/search coverage, buyer intent shifts, and progress, delivered under your brand.',
+  title: 'White-Label Monthly Reports for Agencies | Rankett',
+  description: 'Monthly progress reports for your clients: AI Mention Rate, search coverage, buyer intent shifts. White-labeled PDF ready to send.',
   alternates: { canonical: 'https://rankett.com/features/monthly-reports/' },
+  openGraph: {
+    title: 'White-Label Monthly Reports | Rankett',
+    description: 'AI Mention Rate, search coverage, buyer intent shifts. White-labeled monthly reports delivered under your agency brand.',
+    url: 'https://rankett.com/features/monthly-reports/',
+    siteName: 'Rankett',
+    type: 'website',
+    images: [{ url: 'https://rankett.com/og-image.svg', width: 1200, height: 630, alt: 'Rankett — White-Label Monthly Reports' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'White-Label Monthly Reports | Rankett',
+    description: 'AI Mention Rate, search coverage, buyer intent shifts. White-labeled and ready to forward.',
+    images: ['https://rankett.com/og-image.svg'],
+  },
 }
 
 const mockup = (

@@ -3,9 +3,23 @@ import { FileText } from 'lucide-react'
 import FeaturePageTemplate from '@/components/features/FeaturePageTemplate'
 
 export const metadata: Metadata = {
-  title: 'Research & Diagnosis, Rankett',
+  title: 'AI Search Gap Analysis & Research | Rankett',
   description: 'Query analysis across thousands of AI prompts to surface exactly what\'s driving visibility gaps for each client.',
   alternates: { canonical: 'https://rankett.com/features/research-diagnosis/' },
+  openGraph: {
+    title: 'AI Search Gap Analysis & Research | Rankett',
+    description: 'Query analysis across thousands of AI prompts. Surface the exact gaps driving visibility loss and turn them into a prioritized roadmap.',
+    url: 'https://rankett.com/features/research-diagnosis/',
+    siteName: 'Rankett',
+    type: 'website',
+    images: [{ url: 'https://rankett.com/og-image.svg', width: 1200, height: 630, alt: 'Rankett — AI Search Gap Analysis' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI Search Gap Analysis & Research | Rankett',
+    description: 'Surface exact visibility gaps from thousands of AI prompt queries.',
+    images: ['https://rankett.com/og-image.svg'],
+  },
 }
 
 const mockup = (

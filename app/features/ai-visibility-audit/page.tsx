@@ -3,9 +3,23 @@ import { Search } from 'lucide-react'
 import FeaturePageTemplate from '@/components/features/FeaturePageTemplate'
 
 export const metadata: Metadata = {
-  title: 'AI Visibility Audit, Rankett',
-  description: 'A full diagnosis of where each client shows up across AI platforms, and where competitors are winning. Delivered in minutes.',
+  title: 'AI Visibility Audit for Agency Clients | Rankett',
+  description: 'Full diagnosis: where clients show up in AI search, what competitors are winning. Prioritized roadmap delivered in minutes.',
   alternates: { canonical: 'https://rankett.com/features/ai-visibility-audit/' },
+  openGraph: {
+    title: 'AI Visibility Audit for Agencies | Rankett',
+    description: 'Where does your client show up in ChatGPT, Perplexity, and Gemini? Full diagnosis and prioritized roadmap, delivered in minutes.',
+    url: 'https://rankett.com/features/ai-visibility-audit/',
+    siteName: 'Rankett',
+    type: 'website',
+    images: [{ url: 'https://rankett.com/og-image.svg', width: 1200, height: 630, alt: 'Rankett — AI Visibility Audit' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI Visibility Audit for Agencies | Rankett',
+    description: 'Where does your client show up in ChatGPT and Perplexity? Full diagnosis in minutes.',
+    images: ['https://rankett.com/og-image.svg'],
+  },
 }
 
 const mockup = (

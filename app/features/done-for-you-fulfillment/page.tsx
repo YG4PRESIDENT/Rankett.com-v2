@@ -3,9 +3,23 @@ import { CheckCircle } from 'lucide-react'
 import FeaturePageTemplate from '@/components/features/FeaturePageTemplate'
 
 export const metadata: Metadata = {
-  title: 'Done-For-You Fulfillment, Rankett',
-  description: 'Schema markup, AI-optimized blog posts, FAQ content, LLMs.txt, and authority placements, Rankett builds and deploys everything for your clients.',
+  title: 'Done-For-You SEO Fulfillment Service | Rankett',
+  description: 'Schema, blog posts, FAQ content, LLMs.txt, and authority placements. Rankett builds and deploys. You review and approve.',
   alternates: { canonical: 'https://rankett.com/features/done-for-you-fulfillment/' },
+  openGraph: {
+    title: 'Done-For-You SEO Fulfillment | Rankett',
+    description: 'Schema, blog posts, FAQ content, LLMs.txt, authority placements. Rankett builds and deploys everything. Agencies review and approve.',
+    url: 'https://rankett.com/features/done-for-you-fulfillment/',
+    siteName: 'Rankett',
+    type: 'website',
+    images: [{ url: 'https://rankett.com/og-image.svg', width: 1200, height: 630, alt: 'Rankett — Done-For-You SEO Fulfillment' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Done-For-You SEO Fulfillment | Rankett',
+    description: 'Schema, blog posts, FAQ content, authority placements. Built and deployed for you.',
+    images: ['https://rankett.com/og-image.svg'],
+  },
 }
 
 const mockup = (

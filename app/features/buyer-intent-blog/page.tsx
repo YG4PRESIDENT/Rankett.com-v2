@@ -3,9 +3,23 @@ import { BarChart2 } from 'lucide-react'
 import FeaturePageTemplate from '@/components/features/FeaturePageTemplate'
 
 export const metadata: Metadata = {
-  title: 'Buyer Intent Blog Cluster, Rankett',
-  description: 'Compounding search coverage targeted toward real buyer intent across your niche, services, and location.',
+  title: 'Buyer Intent Blog Clusters | White-Label SEO',
+  description: 'Build a compounding blog cluster targeted at real buyer intent. Schema-optimized, deployed directly, included in your white-label offering.',
   alternates: { canonical: 'https://rankett.com/features/buyer-intent-blog/' },
+  openGraph: {
+    title: 'Buyer Intent Blog Clusters | Rankett',
+    description: 'Compounding search coverage built from real buyer intent signals. Schema-optimized and deployed to client sites every month.',
+    url: 'https://rankett.com/features/buyer-intent-blog/',
+    siteName: 'Rankett',
+    type: 'website',
+    images: [{ url: 'https://rankett.com/og-image.svg', width: 1200, height: 630, alt: 'Rankett — Buyer Intent Blog Clusters' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Buyer Intent Blog Clusters | Rankett',
+    description: 'Compounding search coverage built from real buyer intent signals.',
+    images: ['https://rankett.com/og-image.svg'],
+  },
 }
 
 const mockup = (

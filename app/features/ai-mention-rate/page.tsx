@@ -3,9 +3,23 @@ import { BarChart2 } from 'lucide-react'
 import FeaturePageTemplate from '@/components/features/FeaturePageTemplate'
 
 export const metadata: Metadata = {
-  title: 'AI Mention Rate Tracking, Rankett',
-  description: 'Know exactly how often your clients are cited by ChatGPT, Gemini, and Perplexity. Real numbers, monthly tracking, white-labeled reports.',
+  title: 'AI Mention Rate Tracking & Reporting | Rankett',
+  description: 'Monthly AI Mention Rate: ChatGPT, Perplexity, Gemini citations. Real numbers, white-labeled reports, trending analysis.',
   alternates: { canonical: 'https://rankett.com/features/ai-mention-rate/' },
+  openGraph: {
+    title: 'AI Mention Rate Tracking | Rankett',
+    description: 'How often is your client cited by ChatGPT, Perplexity, and Gemini? Monthly tracking with white-labeled reports for agencies.',
+    url: 'https://rankett.com/features/ai-mention-rate/',
+    siteName: 'Rankett',
+    type: 'website',
+    images: [{ url: 'https://rankett.com/og-image.svg', width: 1200, height: 630, alt: 'Rankett — AI Mention Rate Tracking' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI Mention Rate Tracking | Rankett',
+    description: 'Monthly ChatGPT, Perplexity, Gemini citation tracking. White-labeled reports for agencies.',
+    images: ['https://rankett.com/og-image.svg'],
+  },
 }
 
 const mockup = (

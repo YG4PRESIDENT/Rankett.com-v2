@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <!-- Background gradient: light lavender-blue to slightly deeper blue -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#EDF2FF"/>
+      <stop offset="100%" stop-color="#D8E4FF"/>
+    </linearGradient>
+
+    <!-- Radial glow behind the wordmark -->
+    <radialGradient id="glowGrad" cx="50%" cy="45%" r="55%" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#4F7CFF" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#4F7CFF" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Accent bar gradient -->
+    <linearGradient id="barGrad" x1="0" y1="0" x2="280" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4F7CFF"/>
+      <stop offset="100%" stop-color="#7BA3FF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Radial glow -->
+  <rect width="1200" height="630" fill="url(#glowGrad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="72" y="72" width="280" height="6" rx="3" fill="url(#barGrad)"/>
+
+  <!-- Decorative circle — top right -->
+  <circle cx="1100" cy="110" r="180" fill="#4F7CFF" fill-opacity="0.06"/>
+  <circle cx="1100" cy="110" r="110" fill="#4F7CFF" fill-opacity="0.06"/>
+
+  <!-- Decorative circle — bottom left -->
+  <circle cx="100" cy="560" r="140" fill="#4F7CFF" fill-opacity="0.05"/>
+
+  <!-- Wordmark: "Rankett" — bold, large -->
+  <text
+    x="72"
+    y="298"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="112"
+    font-weight="800"
+    letter-spacing="-4"
+    fill="#111110"
+  >Rankett</text>
+
+  <!-- Tagline -->
+  <text
+    x="76"
+    y="376"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="34"
+    font-weight="500"
+    fill="#4F7CFF"
+    letter-spacing="-0.5"
+  >The AI Search Layer for Your Agency.</text>
+
+  <!-- Sub-line -->
+  <text
+    x="76"
+    y="426"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="26"
+    font-weight="400"
+    fill="#444444"
+    letter-spacing="0"
+  >White-label, done-for-you fulfillment.</text>
+
+  <!-- Bottom-right badge pill -->
+  <rect x="876" y="516" width="252" height="52" rx="26" fill="#4F7CFF"/>
+  <text
+    x="1002"
+    y="548"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+    font-size="22"
+    font-weight="600"
+    fill="#FFFFFF"
+    text-anchor="middle"
+    letter-spacing="0.5"
+  >rankett.com</text>
+
+  <!-- Bottom border line -->
+  <rect x="0" y="620" width="1200" height="10" fill="#4F7CFF" fill-opacity="0.35"/>
+</svg>

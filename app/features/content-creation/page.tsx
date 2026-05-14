@@ -3,9 +3,23 @@ import { Pen } from 'lucide-react'
 import FeaturePageTemplate from '@/components/features/FeaturePageTemplate'
 
 export const metadata: Metadata = {
-  title: 'Content Creation, Rankett',
-  description: 'Page freshness, compounding internal linking, and baked-in blog schema, every piece of content built to compound.',
+  title: 'White-Label Content Creation | Rankett',
+  description: 'AI-optimized blog posts, page freshness updates, schema markup, internal linking. Every post built to compound, deployed for you.',
   alternates: { canonical: 'https://rankett.com/features/content-creation/' },
+  openGraph: {
+    title: 'White-Label Content Creation | Rankett',
+    description: 'Schema-optimized blog posts, page freshness, and internal linking. Content built to compound and deployed directly to client sites.',
+    url: 'https://rankett.com/features/content-creation/',
+    siteName: 'Rankett',
+    type: 'website',
+    images: [{ url: 'https://rankett.com/og-image.svg', width: 1200, height: 630, alt: 'Rankett — White-Label Content Creation' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'White-Label Content Creation | Rankett',
+    description: 'Schema-optimized blog posts, page freshness, and internal linking. Built to compound.',
+    images: ['https://rankett.com/og-image.svg'],
+  },
 }
 
 const mockup = (

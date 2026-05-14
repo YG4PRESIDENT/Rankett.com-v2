@@ -7,9 +7,23 @@ import { blogPosts } from '@/lib/blogPosts'
 import { ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Blog, Rankett AI Search Insights',
-  description: 'Practical guides on AI search visibility, AI Mention Rate, LLMs.txt, schema markup, and how agencies can grow with AI SEO.',
+  title: 'AI Search Blog for Agencies | Rankett',
+  description: 'Guides on AI search visibility, AI Mention Rate, schema markup, buyer intent SEO. Built for agency owners scaling their offering.',
   alternates: { canonical: 'https://rankett.com/blog/' },
+  openGraph: {
+    title: 'AI Search & SEO Insights for Agencies',
+    description: 'Learn about AI search visibility, buyer intent content, and how agencies grow with done-for-you SEO fulfillment.',
+    url: 'https://rankett.com/blog/',
+    siteName: 'Rankett',
+    type: 'website',
+    images: [{ url: 'https://rankett.com/og-image.svg', width: 1200, height: 630, alt: 'Rankett Blog — AI Search for Agencies' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'AI Search Blog for Agencies | Rankett',
+    description: 'Guides on AI search, buyer intent SEO, and AI Mention Rate for agency owners.',
+    images: ['https://rankett.com/og-image.svg'],
+  },
 }
 
 const CATEGORY_COLORS: Record<string, string> = {

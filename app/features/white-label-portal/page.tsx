@@ -3,9 +3,23 @@ import { Globe } from 'lucide-react'
 import FeaturePageTemplate from '@/components/features/FeaturePageTemplate'
 
 export const metadata: Metadata = {
-  title: 'White-Label Portal, Rankett',
-  description: 'Fully branded AI visibility dashboard for your clients. Your logo, your domain, your colors, Rankett never appears.',
+  title: 'White-Label Client Portal & Dashboard | Rankett',
+  description: 'Fully branded AI visibility dashboard. Your logo, colors, custom domain. Clients see your brand only. Rankett stays invisible.',
   alternates: { canonical: 'https://rankett.com/features/white-label-portal/' },
+  openGraph: {
+    title: 'White-Label Client Portal & Dashboard | Rankett',
+    description: 'Fully branded dashboard for your clients. Your logo, your domain, your colors. Rankett is 100% invisible.',
+    url: 'https://rankett.com/features/white-label-portal/',
+    siteName: 'Rankett',
+    type: 'website',
+    images: [{ url: 'https://rankett.com/og-image.svg', width: 1200, height: 630, alt: 'Rankett — White-Label Portal' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'White-Label Client Portal & Dashboard | Rankett',
+    description: 'Fully branded dashboard. Your logo, your domain, your colors. Rankett stays invisible.',
+    images: ['https://rankett.com/og-image.svg'],
+  },
 }
 
 const mockup = (

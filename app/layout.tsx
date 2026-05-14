@@ -10,22 +10,47 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Rankett | AI Visibility for Agencies | White-Label AI Search Optimization",
-  description: "Add AI visibility to your agency's offering. Rankett handles everything: analysis, content, fulfillment. White-labeled, done-for-you. Takes 5 minutes to start.",
+  title: "Rankett | White-Label SEO Fulfillment for Agencies",
+  description: "Done-for-you SEO fulfillment for agencies. Buyer intent content, AI search visibility, white-labeled reports. Takes 5 minutes to start.",
   openGraph: {
     title: "Rankett | AI Visibility for Agencies",
     description: "The AI search layer for your agency. White-label, done-for-you fulfillment. Takes 5 minutes.",
     url: "https://rankett.com",
     siteName: "Rankett",
     type: "website",
+    images: [
+      {
+        url: "https://rankett.com/og-image.svg",
+        width: 1200,
+        height: 630,
+        alt: "Rankett — The AI Search Layer for Your Agency",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Rankett | AI Visibility for Agencies",
     description: "The AI search layer for your agency. White-label, done-for-you.",
+    images: ["https://rankett.com/og-image.svg"],
   },
   robots: { index: true, follow: true },
   alternates: { canonical: "https://rankett.com" },
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Rankett",
+  url: "https://rankett.com",
+  description:
+    "White-label, done-for-you SEO fulfillment for digital marketing agencies.",
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Rankett",
+  url: "https://rankett.com",
 };
 
 export default function RootLayout({
@@ -38,6 +63,16 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} h-full antialiased`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+      </head>
       <body className="min-h-full flex flex-col">
         {/* Gradient layer — position:fixed so it covers the full viewport at all
             scroll positions, including macOS overscroll bounce areas */}

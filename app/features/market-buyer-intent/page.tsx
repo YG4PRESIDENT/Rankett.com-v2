@@ -3,9 +3,23 @@ import { Search } from 'lucide-react'
 import FeaturePageTemplate from '@/components/features/FeaturePageTemplate'
 
 export const metadata: Metadata = {
-  title: 'Market Buyer Intent Tracking, Rankett',
-  description: 'Ongoing scraping of buyer intent signals across your niche and location to fuel a smarter content strategy.',
+  title: 'Buyer Intent Research & Tracking | Rankett',
+  description: "Weekly buyer intent scraping for your client's niche and market. Real signals fuel content strategy and AI search optimization.",
   alternates: { canonical: 'https://rankett.com/features/market-buyer-intent/' },
+  openGraph: {
+    title: 'Buyer Intent Research & Tracking | Rankett',
+    description: 'Weekly scraping of buyer intent signals across Google, AI platforms, and niche forums. Fuels the content cluster strategy.',
+    url: 'https://rankett.com/features/market-buyer-intent/',
+    siteName: 'Rankett',
+    type: 'website',
+    images: [{ url: 'https://rankett.com/og-image.svg', width: 1200, height: 630, alt: 'Rankett — Buyer Intent Research' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Buyer Intent Research & Tracking | Rankett',
+    description: 'Weekly buyer intent scraping for your niche. Fuels content strategy and AI search optimization.',
+    images: ['https://rankett.com/og-image.svg'],
+  },
 }
 
 const mockup = (

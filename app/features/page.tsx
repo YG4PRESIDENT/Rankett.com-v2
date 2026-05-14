@@ -7,9 +7,23 @@ import FadeIn from '@/components/scroll/FadeIn'
 import GradientCTA from '@/components/home/GradientCTA'
 
 export const metadata: Metadata = {
-  title: 'Features, Rankett Advanced Search Coverage',
-  description: 'Buyer intent blog clusters, market tracking, monthly reports, content creation, everything your clients need for advanced SEO and AI search coverage.',
+  title: 'White-Label SEO Features for Agencies | Rankett',
+  description: 'Buyer intent content, market tracking, white-label reports, done-for-you fulfillment. Everything agencies need for AI search coverage.',
   alternates: { canonical: 'https://rankett.com/features/' },
+  openGraph: {
+    title: 'Advanced SEO Features for Agencies | Rankett',
+    description: 'Buyer intent blog clusters, market research, AI visibility tracking, and white-labeled reports for your clients.',
+    url: 'https://rankett.com/features/',
+    siteName: 'Rankett',
+    type: 'website',
+    images: [{ url: 'https://rankett.com/og-image.svg', width: 1200, height: 630, alt: 'Rankett Features — White-Label SEO for Agencies' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'White-Label SEO Features for Agencies | Rankett',
+    description: 'Buyer intent content, market tracking, white-label reports, done-for-you fulfillment.',
+    images: ['https://rankett.com/og-image.svg'],
+  },
 }
 
 const FEATURES = [

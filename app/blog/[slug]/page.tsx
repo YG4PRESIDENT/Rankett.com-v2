@@ -27,10 +27,25 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params
   const post = getPostBySlug(slug)
   if (!post) return { title: 'Not Found' }
+  const desc = post.excerpt.length > 155 ? post.excerpt.slice(0, 152) + '...' : post.excerpt
   return {
-    title: `${post.title}, Rankett Blog`,
-    description: post.excerpt,
+    title: `${post.title} | Rankett Blog`,
+    description: desc,
     alternates: { canonical: `https://rankett.com/blog/${slug}/` },
+    openGraph: {
+      title: `${post.title} | Rankett`,
+      description: desc,
+      type: 'article',
+      url: `https://rankett.com/blog/${slug}/`,
+      siteName: 'Rankett',
+      images: [{ url: 'https://rankett.com/og-image.svg', width: 1200, height: 630, alt: `Rankett Blog — ${post.title}` }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${post.title} | Rankett`,
+      description: desc,
+      images: ['https://rankett.com/og-image.svg'],
+    },
   }
 }
 
