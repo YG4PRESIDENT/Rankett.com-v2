@@ -11,25 +11,25 @@ const FEATURES = [
   {
     icon: BarChart2,
     name: 'Buyer Intent Blog Cluster',
-    description: 'Compounding search coverage targeted toward real buyer intent across your niche, services, and location.',
+    description: 'Monthly blog clusters built from real buyer signals.',
     href: '/features/buyer-intent-blog/',
   },
   {
     icon: FileText,
     name: 'Monthly Reports',
-    description: 'Prompt/search coverage, buyer intent shifts, and a progress report, white-labeled and delivered to your clients.',
+    description: 'White-labeled reports delivered under your brand.',
     href: '/features/monthly-reports/',
   },
   {
     icon: Search,
     name: 'Market Buyer Intent Tracking',
-    description: 'We scrape buyer intent across your niche and location on an ongoing basis to fuel the blog cluster strategy.',
+    description: 'Ongoing buyer intent scraping across your niche and market.',
     href: '/features/market-buyer-intent/',
   },
   {
     icon: Pen,
     name: 'Content Creation',
-    description: 'Page freshness, compounding internal linking, and baked-in blog schema, every piece of content built to compound.',
+    description: 'Schema-optimized posts deployed directly to client sites.',
     href: '/features/content-creation/',
   },
 ]
@@ -124,80 +124,87 @@ export default function Header() {
 
                 {featuresOpen && (
                   <div
-                    className={`absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[540px] rounded-2xl shadow-lg p-4 grid grid-cols-2 gap-1 ${
+                    className={`absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[760px] rounded-2xl shadow-xl p-5 ${
                       scrolled
                         ? 'bg-[#0f1741] border border-white/[0.10]'
                         : 'bg-white border border-[#E5E5E3]'
                     }`}
+                    style={{ boxShadow: scrolled ? undefined : '0 8px 40px rgba(79,124,255,0.10), 0 2px 8px rgba(0,0,0,0.06)' }}
                     onMouseEnter={openDropdown}
                     onMouseLeave={closeDropdown}
                   >
-                    {FEATURES.map((f) => {
-                      const Icon = f.icon
-                      return (
-                        <Link
-                          key={f.href}
-                          href={f.href}
-                          className={`group flex items-start gap-3 p-3 rounded-xl transition-colors ${
-                            scrolled ? 'hover:bg-white/[0.05]' : 'hover:bg-[#FAFAF9]'
-                          }`}
-                        >
-                          <div
-                            className={`w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5 border transition-colors ${
-                              scrolled
-                                ? 'bg-white/[0.06] border-white/[0.10] group-hover:bg-[#4F7CFF]/20 group-hover:border-[#4F7CFF]/30'
-                                : 'bg-[#FAFAF9] border-[#E5E5E3] group-hover:bg-[#EEF2FF] group-hover:border-[#4F7CFF]/20'
+                    <div className="grid grid-cols-[1fr_1fr_200px] gap-4">
+
+                      {/* Left 2 cols — feature items */}
+                      <div className="col-span-2 grid grid-cols-2 gap-1">
+                        {FEATURES.map((f) => {
+                          const Icon = f.icon
+                          return (
+                            <Link
+                              key={f.href}
+                              href={f.href}
+                              className={`group flex items-center gap-3.5 p-3.5 rounded-xl transition-all duration-150 ${
+                                scrolled ? 'hover:bg-white/[0.06]' : 'hover:bg-[#F0F5FF]'
+                              }`}
+                            >
+                              <div className="w-11 h-11 rounded-xl bg-[#4F7CFF] flex items-center justify-center flex-shrink-0 group-hover:bg-[#3D6AEE] transition-colors duration-150 shadow-sm">
+                                <Icon className="w-5 h-5 text-white" />
+                              </div>
+                              <div>
+                                <p className={`text-sm font-semibold leading-tight ${scrolled ? 'text-white/90' : 'text-[#111110]'}`}>
+                                  {f.name}
+                                </p>
+                                <p className={`text-xs mt-0.5 leading-snug ${scrolled ? 'text-white/40' : 'text-[#6B6B6B]'}`}>
+                                  {f.description}
+                                </p>
+                              </div>
+                            </Link>
+                          )
+                        })}
+
+                        {/* View all features — bottom of left grid */}
+                        <div className={`col-span-2 pt-3 mt-1 border-t ${scrolled ? 'border-white/[0.08]' : 'border-[#E5E5E3]'}`}>
+                          <Link
+                            href="/features/"
+                            className={`text-xs font-medium transition-colors ${
+                              scrolled ? 'text-white/40 hover:text-white/70' : 'text-[#6B6B6B] hover:text-[#111110]'
                             }`}
                           >
-                            <Icon
-                              className={`w-3.5 h-3.5 transition-colors group-hover:text-[#4F7CFF] ${
-                                scrolled ? 'text-white/40' : 'text-[#6B6B6B]'
-                              }`}
-                            />
-                          </div>
-                          <div>
-                            <p
-                              className={`text-xs font-semibold leading-tight ${
-                                scrolled ? 'text-white/80' : 'text-[#111110]'
-                              }`}
-                            >
-                              {f.name}
-                            </p>
-                            <p
-                              className={`text-[11px] mt-0.5 leading-snug ${
-                                scrolled ? 'text-white/35' : 'text-[#6B6B6B]'
-                              }`}
-                            >
-                              {f.description}
-                            </p>
-                          </div>
-                        </Link>
-                      )
-                    })}
+                            View all features →
+                          </Link>
+                        </div>
+                      </div>
 
-                    <div
-                      className={`col-span-2 mt-1 pt-3 border-t flex items-center justify-between px-2 ${
-                        scrolled ? 'border-white/[0.08]' : 'border-[#E5E5E3]'
-                      }`}
-                    >
-                      <Link
-                        href="/features/"
-                        className={`text-xs transition-colors ${
+                      {/* Right col — CTA card */}
+                      <div
+                        className={`rounded-xl p-4 flex flex-col justify-between ${
                           scrolled
-                            ? 'text-white/40 hover:text-white/70'
-                            : 'text-[#6B6B6B] hover:text-[#111110]'
+                            ? 'bg-white/[0.07] border border-white/[0.10]'
+                            : 'bg-[#EEF2FF] border border-[#C7D4FF]/60'
                         }`}
                       >
-                        View all features →
-                      </Link>
-                      <a
-                        href={CALENDLY}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-xs font-semibold text-[#4F7CFF] hover:text-[#3D6AEE] transition-colors"
-                      >
-                        Book a Demo →
-                      </a>
+                        <div>
+                          <p className={`text-[10px] font-semibold uppercase tracking-wider mb-2 ${scrolled ? 'text-[#7B9FFF]' : 'text-[#4F7CFF]'}`}>
+                            Get started
+                          </p>
+                          <p className={`text-sm font-bold leading-snug mb-1.5 ${scrolled ? 'text-white/90' : 'text-[#111110]'}`}>
+                            Ready to add the AI layer?
+                          </p>
+                          <p className={`text-xs leading-relaxed ${scrolled ? 'text-white/40' : 'text-[#6B6B6B]'}`}>
+                            Takes 5 minutes. No headcount added.
+                          </p>
+                        </div>
+                        <a
+                          href={CALENDLY}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mt-4 flex items-center justify-center gap-1.5 w-full py-2.5 rounded-lg bg-[#4F7CFF] text-white text-xs font-semibold hover:bg-[#3D6AEE] transition-colors"
+                        >
+                          Book a Call
+                          <ArrowRight className="w-3 h-3" />
+                        </a>
+                      </div>
+
                     </div>
                   </div>
                 )}
