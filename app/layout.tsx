@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Rankett | White-Label SEO Fulfillment for Agencies",
+  title: "Rankett | Advanced Search Coverage for Agencies",
   description: "Done-for-you SEO fulfillment for agencies. Buyer intent content, AI search visibility, white-labeled reports. Takes 5 minutes to start.",
   openGraph: {
     title: "Rankett | AI Visibility for Agencies",

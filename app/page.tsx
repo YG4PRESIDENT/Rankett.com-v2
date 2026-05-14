@@ -12,7 +12,7 @@ import FAQSection from '@/components/home/FAQSection'
 import GradientCTA from '@/components/home/GradientCTA'
 
 export const metadata: Metadata = {
-  title: 'Rankett | White-Label SEO for Agencies | Done-For-You Fulfillment',
+  title: 'Rankett | Advanced Search Coverage for Agencies',
   description: 'Done-for-you SEO fulfillment. Buyer intent content, AI search visibility, white-labeled reports. Agencies scale without hiring.',
   alternates: { canonical: 'https://rankett.com' },
   openGraph: {
