@@ -18,10 +18,8 @@ const MARKUP_EXAMPLES = [
 export default function AgencyEconomics() {
   return (
     <section
-      className="relative overflow-hidden py-20 md:py-28 border-t border-[#E5E5E3]"
+      className="py-20 md:py-28 border-t border-[#E5E5E3]"
     >
-      <div aria-hidden="true" className="pointer-events-none absolute -top-28 -left-28 w-[380px] h-[380px] rounded-full bg-[#9B59FF]/[0.09] blur-3xl" />
-      <div aria-hidden="true" className="pointer-events-none absolute -bottom-28 -right-28 w-[300px] h-[300px] rounded-full bg-[#4F7CFF]/[0.08] blur-3xl" />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Left */}

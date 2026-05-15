@@ -21,9 +21,7 @@ const ADVANTAGES = [
 
 export default function AgencyAdvantages() {
   return (
-    <section id="agency-advantages" className="relative overflow-hidden py-20 md:py-28 border-t border-[#E5E5E3]">
-      <div aria-hidden="true" className="pointer-events-none absolute -top-28 -right-28 w-[360px] h-[360px] rounded-full bg-[#4F7CFF]/[0.09] blur-3xl" />
-      <div aria-hidden="true" className="pointer-events-none absolute -bottom-28 -left-28 w-[300px] h-[300px] rounded-full bg-[#9B59FF]/[0.08] blur-3xl" />
+    <section id="agency-advantages" className="py-20 md:py-28 border-t border-[#E5E5E3]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn direction="up">
           <div className="mb-12">

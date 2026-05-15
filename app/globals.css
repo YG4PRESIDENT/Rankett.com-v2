@@ -38,14 +38,17 @@
 
 html {
   overflow-x: hidden;
-  background-color: #FAFAF9;
+  /* Solid fallback Chrome uses for overscroll bounce — matches gradient tone */
+  background-color: #C5D5FF;
 }
 
 body {
   overflow-x: hidden;
   max-width: 1152px;
   margin: 0 auto;
-  background-color: #FAFAF9;
+  background: transparent;
+  border-left:  1px solid rgba(255, 255, 255, 0.60);
+  border-right: 1px solid rgba(255, 255, 255, 0.60);
   color: var(--color-text);
   font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
