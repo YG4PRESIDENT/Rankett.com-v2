@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import OverscrollSync from "@/components/OverscrollSync";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -74,8 +73,8 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col">
-        {/* Gradient layer — position:fixed so it covers the full viewport at all
-            scroll positions, including macOS overscroll bounce areas */}
+        {/* Unified background — fixed so dots + glow cover gutter and content equally,
+            no color discontinuity at the body border lines */}
         <div
           aria-hidden="true"
           style={{
@@ -84,14 +83,18 @@ export default function RootLayout({
             zIndex: -1,
             pointerEvents: 'none',
             background: [
-              'radial-gradient(ellipse 120% 55% at 38% -8%,  rgba(138,168,255,0.72) 0%, rgba(195,215,255,0.28) 52%, transparent 74%)',
-              'radial-gradient(ellipse 85%  48% at 74% 50%,  rgba(172,202,255,0.54) 0%, transparent 68%)',
-              'radial-gradient(ellipse 105% 50% at 26% 104%, rgba(182,210,255,0.62) 0%, transparent 72%)',
-              '#EDF2FF',
+              'radial-gradient(circle, rgba(100, 128, 255, 0.065) 1px, transparent 1px)',
+              'radial-gradient(ellipse 90% 14% at 15%  3%,  rgba(148, 178, 255, 0.46) 0%, transparent 100%)',
+              'radial-gradient(ellipse 80% 12% at 85% 17%,  rgba(172, 200, 255, 0.40) 0%, transparent 100%)',
+              'radial-gradient(ellipse 85% 13% at 12% 34%,  rgba(190, 215, 255, 0.44) 0%, transparent 100%)',
+              'radial-gradient(ellipse 75% 11% at 82% 52%,  rgba(148, 178, 255, 0.36) 0%, transparent 100%)',
+              'radial-gradient(ellipse 82% 13% at 18% 70%,  rgba(172, 200, 255, 0.40) 0%, transparent 100%)',
+              'radial-gradient(ellipse 70% 11% at 80% 88%,  rgba(190, 215, 255, 0.34) 0%, transparent 100%)',
+              '#EEF3FF',
             ].join(', '),
+            backgroundSize: '28px 28px, auto, auto, auto, auto, auto, auto, auto',
           }}
         />
-        <OverscrollSync />
         {children}
       </body>
     </html>

@@ -38,8 +38,12 @@
 
 html {
   overflow-x: hidden;
-  /* Solid fallback Chrome uses for overscroll bounce — matches gradient tone */
-  background-color: #C5D5FF;
+  /* Gradient spans the full document height (background-attachment: scroll = default).
+     The fixed viewport div covers it during normal viewing.
+     Only the rubber-band overscroll zones reveal it:
+       top  → #EEF3FF  (light blue, matches the page atmosphere)
+       bottom → #0a0f30 (dark navy, matches the footer) */
+  background: linear-gradient(to bottom, #EEF3FF 85%, #0a0f30 100%);
 }
 
 body {
