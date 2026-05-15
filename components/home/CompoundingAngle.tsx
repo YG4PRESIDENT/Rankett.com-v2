@@ -11,8 +11,10 @@ const COVERAGE_POINTS = [
 export default function CompoundingAngle() {
   return (
     <section
-      className="py-20 md:py-28 border-t border-[#E5E5E3]"
+      className="relative overflow-hidden py-20 md:py-28 border-t border-[#E5E5E3]"
     >
+      <div aria-hidden="true" className="pointer-events-none absolute -top-28 -right-28 w-[360px] h-[360px] rounded-full bg-[#4F7CFF]/[0.09] blur-3xl" />
+      <div aria-hidden="true" className="pointer-events-none absolute -bottom-28 -left-28 w-[320px] h-[320px] rounded-full bg-[#9B59FF]/[0.08] blur-3xl" />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left, copy */}

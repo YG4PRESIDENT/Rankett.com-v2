@@ -25,7 +25,9 @@ const STEPS = [
 
 export default function TheMechanism() {
   return (
-    <section id="mechanism" className="py-20 md:py-28 border-t border-[#E5E5E3]">
+    <section id="mechanism" className="relative overflow-hidden py-20 md:py-28 border-t border-[#E5E5E3]">
+      <div aria-hidden="true" className="pointer-events-none absolute -top-28 -left-28 w-[400px] h-[400px] rounded-full bg-[#9B59FF]/[0.08] blur-3xl" />
+      <div aria-hidden="true" className="pointer-events-none absolute -bottom-20 -right-20 w-[280px] h-[280px] rounded-full bg-[#4F7CFF]/[0.09] blur-3xl" />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <FadeIn direction="up">
